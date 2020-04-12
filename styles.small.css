@@ -159,7 +159,7 @@ a.button
 #whoweare .body .profile
 {
     width:     70%;
-    height:    26.5rem;
+    height:    30rem;
     max-width: 25rem;
 }
 
@@ -213,11 +213,13 @@ a.button
 
 #footer .left
 {
-    width:       50%;
-    margin-left: 1.0rem;
+    width:       70%;
+    margin-left: 0.5rem;
+
+    white-space: nowrap;
 }
 
 #footer .right
 {
-    margin-right: 1.0rem;
+    margin-right: 0.5rem;
 }
