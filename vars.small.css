@@ -1,0 +1,17 @@
+.vars_measurements
+{
+    --intro-header-font-size:       220%;
+    --intro-text-font-size:         110%;
+    --emph-font-size:               100%;
+    --bullet-font-size:             105%;
+    --bullet-text-font-size:        100%;
+    --header-font-size:             220%;
+    --button-font-size:             100%;
+    --cur-header-font-size:         220%;
+    --cur-checkmark-font-size:      150%;
+    --cur-checkmark-text-font-size: 100%;
+    --packages-header-font-size:    110%;
+    --packages-button-font-size:    100%;
+    --packages-feature-font-size:   120%;
+    --packages-checked-font-size:   200%;
+}

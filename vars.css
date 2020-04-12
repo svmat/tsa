@@ -1,0 +1,83 @@
+.vars_colors
+{
+    --background-color:         rgba(255, 255, 255, 1.0);
+    --button-background-color:  rgba(255, 100, 100, 1.0);
+    --navbar-background-color:  rgba(  0,   0,   0, 0.0);
+    --navbar-underline-color:   rgba(255, 100, 100, 1.0);
+    --menu-background-color:    rgba(  0,   0,   0, 0.0);
+    --overlay-background-color: rgba(  0,   0,   0, 0.5);
+    --footer-background-color:  rgba(  0,   0,   0, 1.0);
+
+    --def-text-color:              rgba(  0,   0,   0, 1.0);
+    --intro-text-color:            rgba(  0,   0,   0, 0.7);
+    --dark-header-text-color:      rgba( 90,  90,  90, 1.0);
+    --light-header-text-color:     rgba(255, 255, 255, 1.0);
+    --light-text-color:            rgba(255, 255, 255, 1.0);
+    --button-text-color:           rgba(255, 255, 255, 1.0);
+    --subtle-text-color:           rgba(120, 120, 120, 1.0);
+    --menu-icon-color:             rgba(  0,   0,   0, 1.0);
+    --menu-links-background-color: rgba(245, 245, 245, 1.0);
+    --menu-links-text-color:       rgba(  0,   0,   0, 1.0);
+    --packages-pro-color:          rgba(249, 178, 148, 1.0);
+    --packages-adv-color:          rgba(235, 117, 128, 1.0);
+    --packages-vip-color:          rgba(187, 109, 135, 1.0);
+    --packages-old-color:          rgba(150, 150, 150, 1.0);
+    --packages-new-color:          rgba(  0,   0,   0, 1.0);
+
+    --border-color: rgba(198, 198, 198, 1.0);
+    --sep-color:    rgba(255, 100, 100, 1.0);
+    --bullet-color: rgba(255, 100, 100, 1.0);
+
+    --link-color: rgba(255, 100, 100, 1.0);
+}
+
+.vars_fonts
+{
+    --standout-font: 'Lato';
+    --content-font:  'Raleway', 'helvetica', 'sans-serif';
+}
+
+.vars_measurements
+{
+    --def-font-size:                     100%;
+    --intro-header-font-size:            280%;
+    --intro-text-font-size:              125%;
+    --emph-font-size:                    120%;
+    --bullet-font-size:                  150%;
+    --bullet-text-font-size:             120%;
+    --checkmark-text-font-size:          180%;
+    --expander-font-size:                145%;
+    --subtext-font-size:                 100%;
+    --header-font-size:                  300%;
+    --subheader-font-size:               175%;
+    --button-font-size:                  110%;
+    --navbar-font-size:                  120%;
+    --menu-icon-font-size:               200%;
+    --menu-links-font-size:              150%;
+    --experience-header-font-size:       220%;
+    --whoweare-profile-header-font-size: 150%;
+    --cur-header-font-size:              250%;
+    --cur-checkmark-font-size:           145%;
+    --cur-checkmark-text-font-size:      145%;
+    --packages-header-font-size:         150%;
+    --packages-button-font-size:         100%;
+    --packages-feature-font-size:        120%;
+    --packages-checked-font-size:        200%;
+    --packages-old-price-font-size:      90%;
+    --packages-new-price-font-size:      130%;
+    --faq-header-font-size:              150%;
+
+    --intro-header-font-weight:       900;
+    --intro-text-font-weight:         600;
+    --def-font-weight:                400;
+    --emph-font-weight:               500;
+    --bold-font-weight:               800;
+    --header-font-weight:             900;
+    --cur-checkmark-font-weight:      900;
+    --cur-checkmark-text-font-weight: 900;
+
+    --page-min-width:     360px;
+    --page-max-width:     2160px;
+
+    --section-gap: 5.0rem;
+}

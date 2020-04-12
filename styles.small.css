@@ -1,0 +1,223 @@
+a.button
+{
+    padding: 0.6rem;
+}
+
+
+#navbar
+{
+    display: none;
+}
+
+
+#menu
+{
+    display: flex;
+}
+
+
+#intro
+{
+
+    background-position: center bottom;
+
+    height: 45rem;
+}
+
+#intro_logo
+{
+    left: 0.8rem;
+}
+
+#intro .layer .logo
+{
+    width: 9.0rem;
+}
+
+#intro .layer h1
+{
+    width: 95%;
+
+    white-space: normal;
+}
+
+#intro .layer p
+{
+    width: 19.0rem;
+}
+
+#intro .layer a
+{
+    width: 8.0rem;
+}
+
+
+#pitch_decoration
+{
+    top:  0%;
+    left: 5%;
+}
+
+#pitch .decoration
+{
+    opacity: 0.15;
+
+    width: 20.0rem;
+}
+
+#pitch .questions li
+{
+    margin-top:    1.0rem;
+    margin-bottom: 1.0rem;
+    line-height:   1.5rem;
+}
+
+#pitch p
+{
+    width: 95%;
+}
+
+
+#seewhy .video
+{
+    width:      100%;
+    margin-top: 2.0rem;
+}
+
+#seewhy .video iframe
+{
+    width:  100%;
+    height: calc(100vw * 0.63);
+}
+
+
+#highlights .group
+{
+    display:         flex;
+    flex-direction:  column;
+    justify-content: center;
+    align-items:     flex-start;
+}
+
+#highlights .group .item
+{
+    width: 18.0rem;
+}
+
+#highlights .group .item h2
+{
+    text-align: center;
+}
+
+#highlights .group .item p
+{
+    text-align: center;
+}
+
+
+#experience_details
+{
+    left: 0;
+    top:  7%;
+}
+
+#experience .desk
+{
+    background-image:    url("media/experience_desk.small.jpg");
+    background-position: center bottom;
+
+    height: 54.0rem;
+}
+
+@media screen and (min-width: 750px)
+{
+    #experience .desk
+    {
+        height: 64.0rem;
+    }
+}
+
+#experience .desk .details
+{
+    width:        calc(100% - 3.0rem);
+    padding-left: 1.5rem;
+}
+
+#experience .desk .details h2
+{
+}
+
+
+#whoweare .body
+{
+    display:         flex;
+    flex-direction:  column;
+    justify-content: center;
+    align-items:     center;
+}
+
+#whoweare .body .profile
+{
+    width:     70%;
+    height:    26.5rem;
+    max-width: 25rem;
+}
+
+
+#cur_details
+{
+    left: 7%;
+    top:  1.8rem;
+}
+
+#cur .desk
+{
+    background-image: url("media/cur_desk.small.jpg");
+
+    height: 60.0rem;
+}
+
+#cur .desk .details
+{
+    width:        90%;
+    padding-left: 0.0rem;
+}
+
+
+#packages .table .cell:first-child
+{
+    display: none;
+}
+
+#packages .table .header:nth-child(2)
+{
+    border-left-color: var(--border-color);
+}
+
+#packages .table .feature
+{
+    border-left-color: var(--border-color);
+
+    width: 100%;
+
+    text-align: center;
+
+    align-items: center;
+}
+
+#packages .table .feature + div
+{
+    border-left-color: var(--border-color);
+}
+
+
+#footer .left
+{
+    width:       50%;
+    margin-left: 1.0rem;
+}
+
+#footer .right
+{
+    margin-right: 1.0rem;
+}
