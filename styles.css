@@ -22,8 +22,39 @@
 
 @keyframes anim_zoom
 {
-    from {transform: scale(0)}
-    to {transform: scale(1)}
+    from
+    {
+	transform: scale(0)
+    }
+
+    to
+    {
+	transform: scale(1)
+    }
+}
+
+@keyframes anim_wheelin
+{
+    to
+    {
+	left: 0;
+    }
+}
+
+@keyframes anim_wheelleft
+{
+    to
+    {
+	left: -100%;
+    }
+}
+
+@keyframes anim_wheelright
+{
+    to
+    {
+	left: 100%;
+    }
 }
 
 
@@ -990,6 +1021,184 @@ h2
 #packages .table .checked:before
 {
     content: '\2713';
+}
+
+
+#testimonials
+{
+    position: relative;
+
+    width:         100%;
+    margin-top:    var(--section-gap);
+    margin-bottom: var(--section-gap);
+
+    display:         flex;
+    flex-direction:  column;
+    justify-content: flex-start;
+    align-items:     center;
+}
+
+#testimonials .wheel
+{
+    color: var(--light-text-color);
+
+    background-image:    url("media/testimonials_background.jpg");
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: 50% 50%;
+
+    width:  100%;
+    height: 45rem;
+
+    display:         flex;
+    flex-direction:  row;
+    justify-content: center;
+    align-items:     center;
+}
+
+#testimonials .wheel .scroll
+{
+    cursor: pointer;
+
+    height:        100%;
+    width:         2.0rem;
+    padding-left:  1.0rem;
+    padding-right: 1.0rem;
+
+    display:         flex;
+    flex-direction:  column;
+    justify-content: center;
+    align-items:     center;
+
+    font-size:   var(--testimonials-scroll-font-size);
+    font-weight: var(--testimonials-scroll-font-weight);
+}
+
+#testimonials .wheel .scroll:hover
+{
+    color: var(--link-color);
+}
+
+#testimonials .wheel .content
+{
+    width:  45.0rem;
+    height: 20.0rem;
+
+    position: relative;
+
+    display:         flex;
+    flex-direction:  row;
+    justify-content: center;
+    align-items:     center;
+
+    overflow: hidden;
+}
+
+#testimonials .wheel .content .anim_in
+{
+    animation-name:            anim_wheelin;
+    animation-fill-mode:       forwards;
+    animation-duration:        2s;
+    animation-iteration-count: 1;
+}
+
+#testimonials .wheel .content .anim_left
+{
+    animation-name:            anim_wheelleft;
+    animation-fill-mode:       forwards;
+    animation-duration:        2s;
+    animation-iteration-count: 1;
+}
+
+#testimonials .wheel .content .anim_right
+{
+    animation-name:            anim_wheelright;
+    animation-fill-mode:       forwards;
+    animation-duration:        2s;
+    animation-iteration-count: 1;
+}
+
+#testimonials .wheel .content .hidden_left
+{
+    left: -100%;
+}
+
+#testimonials .wheel .content .hidden_right
+{
+    left: 100%;
+}
+
+#testimonials .wheel .content .visible
+{
+    left: 0;
+}
+
+#testimonials .wheel .content .statement
+{
+    width:     100%;
+    min-width: 100%;
+
+    position: absolute;
+
+    display:         flex;
+    flex-direction:  row;
+    justify-content: center;
+    align-items:     center;
+
+    overflow: hidden;
+}
+
+#testimonials .wheel .content .statement img
+{
+    width:     10.0rem;
+    min-width: 10.0rem;
+    padding:   0.5rem;
+}
+
+#testimonials .wheel .content .statement .text
+{
+    position: relative;
+
+    padding-left: 0.7rem;
+}
+
+#testimonials .wheel .content .statement .text h1:before
+{
+    content: open-quote;
+
+    opacity: 0.6;
+
+    position: absolute;
+    top:      -3.0rem;
+    left:     -0.5rem;
+
+    font-size:   var(--testimonials-quote-font-size);
+    font-weight: var(--testimonials-quote-font-weight);
+}
+
+#testimonials .wheel .content .statement .text h1:after
+{
+    visibility: hidden;
+
+    content: close-quote;
+}
+
+#testimonials .wheel .content .statement .text h1
+{
+    color: var(--light-text-color);
+
+    padding-left: 0.7rem;
+
+    text-align:  left;
+    font-size:   var(--testimonials-header-font-size);
+    font-weight: var(--testimonials-header-font-weight);
+}
+
+#testimonials .wheel .content .statement .text p
+{
+    text-align:  left;
+    font-size:   var(--testimonials-text-font-size);
+    font-weight: var(--testimonials-text-font-weight);
 }
 
 

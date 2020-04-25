@@ -1,6 +1,11 @@
 var whoweare_profiles = [];
 var faq_questions     = [];
 
+var testimonials_wheel = {
+    entries: [],
+    focus:   0
+};
+
 var animation_id    = null;
 var last_client_top = -1;
 
@@ -53,6 +58,68 @@ function hideMenuLinks ()
     links_e.style.display = "none";
 
     return true;
+}
+
+function removeWheelAttrs (e)
+{
+    e.classList.remove("anim_in");
+    e.classList.remove("anim_left");
+    e.classList.remove("anim_right");
+    e.classList.remove("hidden_left");
+    e.classList.remove("hidden_right");
+    e.classList.remove("visible");
+}
+
+function changeWheelFocus (wheel, dir)
+{
+    var new_focus = wheel.focus+dir;
+    if(new_focus < 0)
+        new_focus = wheel.entries.length-1;
+    else if(new_focus >= wheel.entries.length)
+        new_focus = 0;
+
+    var new_focus_e = wheel.entries[new_focus];
+    var focus_e     = wheel.entries[wheel.focus];
+
+    removeWheelAttrs(new_focus_e);
+    removeWheelAttrs(focus_e);
+
+    if(dir < 0)
+    {
+        focus_e.classList.add("visible");
+        focus_e.classList.add("anim_right");
+        new_focus_e.classList.add("hidden_left");
+        new_focus_e.classList.add("anim_in");
+    }
+    else
+    {
+        focus_e.classList.add("visible");
+        focus_e.classList.add("anim_left");
+        new_focus_e.classList.add("hidden_right");
+        new_focus_e.classList.add("anim_in");
+    }
+
+    wheel.focus = new_focus;
+
+    return true;
+}
+
+function resetWheelClasses (wheel)
+{
+    for(var index = wheel.entries.length; index-- > 0;)
+    {
+        removeWheelAttrs(wheel.entries[index]);
+        if(index != wheel.focus)
+            wheel.entries[index].classList.add("hidden_left");
+    }
+}
+
+function initWheel (wheel, selector)
+{
+    wheel.entries = document.querySelectorAll(selector);
+    wheel.focus   = 0;
+
+    resetWheelClasses(wheel);
 }
 
 function toggleCollapse (e, collapsible_e, expanded_class, collapsed_class)
@@ -182,6 +249,7 @@ function initPage ()
 
     main.style.display = "block";
 
+    initWheel(testimonials_wheel, "#testimonials .wheel .content .statement");
     updatePage();
 }
 

@@ -211,6 +211,31 @@ a.button
 }
 
 
+#testimonials .wheel
+{
+    	justify-content: flex-start;
+}
+
+@media screen and (max-width: 425px)
+{
+    #testimonials .wheel
+    {
+	align-items: flex-start;
+    }
+}
+
+#testimonials .wheel .content
+{
+    height: 40.0rem;
+}
+
+#testimonials .wheel .content .statement
+{
+    flex-direction:  column;
+    justify-content: flex-start;
+}
+
+
 #footer .left
 {
     width:       70%;
@@ -223,6 +248,7 @@ a.button
 {
     margin-right: 0.5rem;
 }
+
 
 #banner .content
 {

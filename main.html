@@ -8,7 +8,6 @@
     <meta name="language" content="en">
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
 
-    <link rel="stylesheet" type="text/css" href="normalize.min.css"/>
     <link rel="stylesheet" type="text/css" href="vars.css">
     <link rel="stylesheet"
           type="text/css"
@@ -24,8 +23,6 @@
           type="text/css"
           href="styles.huge.css"
           media="screen and (min-width: 2160px)">
-
-    <script type="text/javascript" src="code.js"></script>
 
     <link rel="stylesheet"
           type="text/css"
@@ -44,21 +41,9 @@
                    Learn why a career is the right choice for your future and enroll
                    today!">
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160012508-1">
-    </script>
+    <script type="text/javascript" src="code.js"></script>
 
-    <script type="text/javascript">
-        var _paq = window._paq || [];
-        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-        _paq.push(['trackPageView']);
-        _paq.push(['enableLinkTracking']);
-        (function() {
-        var u="https://techskillacademy.matomo.cloud/";
-        _paq.push(['setTrackerUrl', u+'matomo.php']);
-        _paq.push(['setSiteId', '1']);
-        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-        g.type='text/javascript'; g.async=true; g.defer=true; g.src='//cdn.matomo.cloud/techskillacademy.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
-        })();
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160012508-1">
     </script>
 
     <script>
@@ -374,7 +359,6 @@
         </div>
     </div>
 
-
     <div id="packages">
         <div>
             <h1>
@@ -390,7 +374,7 @@
                     Professional
                 </div>
                 <a class="button pro_button"
-                   href="https://techskillacademy.thinkific.com/users/sign_up">
+                   href="https://techskillacademy.thinkific.com/courses/quality-assurance-professional">
                     Start Free Trial
                 </a>
             </div>
@@ -399,7 +383,7 @@
                     Professional Advanced
                 </div>
                 <a class="button adv_button"
-                   href="https://techskillacademy.thinkific.com/users/sign_up">
+                   href="https://techskillacademy.thinkific.com/courses/quality-assurance-training">
                     Start Free Trial
                 </a>
             </div>
@@ -408,7 +392,7 @@
                     VIP
                 </div>
                 <a class="button vip_button"
-                   href="https://techskillacademy.thinkific.com/users/sign_up">
+                   href="https://techskillacademy.thinkific.com/courses/qa-course-vip">
                     Start Free Trial
                 </a>
             </div>
@@ -524,6 +508,76 @@
             <div class="cell pro        "></div>
             <div class="cell adv        "></div>
             <div class="cell vip checked"></div>
+        </div>
+    </div>
+
+    <div id="testimonials">
+        <div>
+            <h1>
+                Testimonials
+            </h1>
+            <div class="line_sep"></div>
+        </div>
+
+        <div class="wheel">
+            <div class="scroll"
+                 onclick="return changeWheelFocus(testimonials_wheel, -1);">
+                &lt;
+            </div>
+            <div class="content">
+                <div class="statement">
+                    <img src="media/testimonials_natalya_k.png">
+                    <div class="text">
+                        <h1>
+                            Everything is possible if you have a goal
+                        </h1>
+                        <p>
+                            ...I started my IT career as a manual QA tester right after completing a
+                            2.5 month online QA course without any tech background a bachelor in
+                            Russian philology. After I began work as an Automation QA at JPMorgan
+                            Chase, I was promoted to a Java Developer role. Everything is possible
+                            if you have a goals :)
+                            <em>- Natalya Kodaneva</em>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="statement">
+                    <img src="media/testimonials_nataliia_s.png">
+                    <div class="text">
+                        <h1>
+                            Starting base pay is really high
+                        </h1>
+                        <p>
+                            ...I choose a QA career because I didn’t need to spend tens of thousands
+                            of dollars to get a Computer Science degree. The biggest plus is, of
+                            course, the salary.  I don’t know of any other professions that will
+                            give you such a great beginning base pay.
+                            <em>- Nataliia Smal</em>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="statement">
+                    <img src="media/testimonials_natallia_c.png">
+                    <div class="text">
+                        <h1>
+                            This career has changed my life in America
+                        </h1>
+                        <p>
+                            ...As an immigrant it is hard to find a fun and high paying job, but QA
+                            meets all these requirements. This job also helps me fulfill both my
+                            creative and intellectual potential with endless possibilities of
+                            learning and being on top of the latest technology trends.
+                            <em>- Natallia Chukhno</em>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll"
+                 onclick="return changeWheelFocus(testimonials_wheel, 1);">
+                &gt;
+            </div>
         </div>
     </div>
 
@@ -707,21 +761,6 @@
             <a href="https://www.facebook.com/techSkillAcademyHelp"
                title="TechSkillAcademy on Facebook">
                 <img alt="TechSkillAcademy on Facebook" src="media/footer_facebook.svg"/>
-            </a>
-        </div>
-    </div>
-
-    <div id="banner" class="modal" onclick="if(event.target == this) hideBanner(); return true;">
-        <div class="content">
-            <div onclick="return hideBanner();" class="close" title="Close"></div>
-            <div class="details">
-                <h2>Join us for a free webinar</h2>
-                <h3>How to start your career in IT without technical background</h3>
-            </div>
-            <img src="media/banner_attn.jpg">
-            <a class="button"
-               href="https://techskillaccademy.webinarninja.com/live-webinars/310612/register">
-                Reserve My Seat
             </a>
         </div>
     </div>

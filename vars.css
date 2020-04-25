@@ -68,15 +68,23 @@
     --packages-old-price-font-size:      90%;
     --packages-new-price-font-size:      130%;
     --faq-header-font-size:              150%;
+    --testimonials-scroll-font-size:     300%;
+    --testimonials-header-font-size:     150%;
+    --testimonials-text-font-size:       100%;
+    --testimonials-quote-font-size:      900%;
 
-    --intro-header-font-weight:       900;
-    --intro-text-font-weight:         600;
-    --def-font-weight:                400;
-    --emph-font-weight:               500;
-    --bold-font-weight:               800;
-    --header-font-weight:             900;
-    --cur-checkmark-font-weight:      900;
-    --cur-checkmark-text-font-weight: 900;
+    --intro-header-font-weight:        900;
+    --intro-text-font-weight:          600;
+    --def-font-weight:                 400;
+    --emph-font-weight:                500;
+    --bold-font-weight:                800;
+    --header-font-weight:              900;
+    --cur-checkmark-font-weight:       900;
+    --cur-checkmark-text-font-weight:  900;
+    --testimonials-scroll-font-weight: 900;
+    --testimonials-header-font-weight: 900;
+    --testimonials-text-font-weight:   900;
+    --testimonials-quote-font-weight:  900;
 
     --page-min-width:     360px;
     --page-max-width:     2160px;
