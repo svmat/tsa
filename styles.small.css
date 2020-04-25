@@ -223,3 +223,14 @@ a.button
 {
     margin-right: 0.5rem;
 }
+
+.modal-content
+{
+    margin: 20% auto 15% auto;
+    width: 81%;
+}
+
+.banner-button
+{
+width: 60%;
+}

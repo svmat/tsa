@@ -168,6 +168,15 @@ function initPage ()
 
     main.style.display = "block";
 
+    var modal = document.getElementById("modal-wrapper");
+    window.onclick = function(event) {
+        if (event.target == modal) {
+        modal.style.display = "none";
+        }
+    }
+
+    document.getElementById('modal-wrapper').style.display='block';
+
     updatePage();
 }
 
