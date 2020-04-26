@@ -1260,7 +1260,6 @@ h2
     color: var(--banner-title-color);
 }
 
-
 #banner .close:before
 {
     content: '\2715';
