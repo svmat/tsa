@@ -224,13 +224,13 @@ a.button
     margin-right: 0.5rem;
 }
 
-.modal-content
+#banner .content
 {
     margin: 20% auto 15% auto;
-    width: 81%;
+    width:  81%;
 }
 
-.banner-button
+#banner a
 {
-width: 60%;
+    width: 60%;
 }

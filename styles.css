@@ -20,6 +20,12 @@
     }
 }
 
+@keyframes anim_zoom
+{
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
 
 html
 {
@@ -140,6 +146,23 @@ h2
 .collapse_arrow:after
 {
     content: '\25BE';
+}
+
+.modal
+{
+    background-color: var(--modal-background-color);
+
+    position: fixed;
+    z-index:  1;
+    left:     0;
+    top:      0;
+
+    width:  100%;
+    height: 100%;
+
+    display: none;
+
+    overflow: visible;
 }
 
 
@@ -1207,69 +1230,64 @@ h2
     height: 2.0rem;
 }
 
-.banner-button
+
+#banner .content
 {
-width: 40%;
-margin: 20px auto;
+    background-color: var(--background-color);
+
+    position: relative;
+
+    margin:         5% auto 15% auto;
+    width:          40%;
+    padding-bottom: 0.3rem;
+
+    border: 0.1rem solid var(--border-color);
+
+    animation: anim_zoom 0.6s;
 }
 
-.text-container
+#banner .content .details
 {
-text-align: center;
-margin: 24px 0 12px 0;
-position: relative;
+    position: relative;
+
+    margin: 2.0rem 0 2.0rem 0;
+
+    text-align: center;
 }
 
-.text-container h2
+#banner .content .details h2
 {
-color: #EB7580
+    color: var(--banner-title-color);
 }
 
-.banner-image
+
+#banner .close:before
 {
-width: 100%;
+    content: '\2715';
+
+    color:  var(--menu-icon-color);
+
+    font-size:      var(--menu-icon-font-size);
+    vertical-align: middle;
 }
 
-.modal
+#banner .close
 {
-display:none;
-position: fixed;
-z-index: 1;
-left: 0;
-top: 0;
-width: 100%;
-height: 100%;
-overflow: visible;
-background-color: rgba(0,0,0,0.4);
+    position: absolute;
+
+    cursor: pointer;
+
+    top:  0.4rem;
+    left: calc(100% - 2.75rem);
 }
 
-.modal-content
+#banner img
 {
-background-color: #fefefe;
-margin: 5% auto 15% auto;
-border: 1px solid #888;
-width: 40%;
-padding-bottom: 5px;
+    width: 100%;
 }
 
-.close {
-position: absolute;
-right: 20px;
-top: -20px;
-color: #000;
-font-size: 35px;
-font-weight: bold;
-}
-
-.close:hover,.close:focus {
-color: red;
-cursor: pointer;
-}
-
-.animate {
-animation: zoom 0.6s
-}
-@keyframes zoom {
-from {transform: scale(0)}
-to {transform: scale(1)}
+#banner a
+{
+    width:  40%;
+    margin: 1.0rem auto;
 }
