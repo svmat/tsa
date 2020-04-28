@@ -183,6 +183,7 @@ function initPage ()
     main.style.display = "block";
 
     updatePage();
+    showBanner();
 }
 
 
