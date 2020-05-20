@@ -1693,7 +1693,7 @@ h2
 }
 
 #interview #intro .layer h1 {
-    color: var(--intro-text-color);
+    color: var(--darken-gray);
     font-family: var(--standout-font);
     font-size: var(--header-font-size);
     font-weight: var(--header-font-weight);
@@ -1735,29 +1735,43 @@ h2
 #interview #what_happens .wrapper {
     max-width: 700px;
     width: 100%;
-    margin: 40px auto 30px;
+    margin: 60px auto 30px;
     padding: 0 25px;
     box-sizing: border-box;
 }
 
 #interview #what_happens h2 {
-    color: var(--intro-text-color);
-    font-family: var(--standout-font);
+    color: var(--darken-gray);
+    font-family: 'Helvetica', 'sans-serif';
+    font-weight: var(--intro-text-font-weight);
     font-size: var(--subheader-font-size);
-    font-weight: var(--header-font-weight);
     margin: 0;
     padding-bottom: 0.5rem;
 }
 
 #interview #what_happens h3 {
-    color: var(--intro-text-color);
+    color: var(--darken-gray);
 
     margin: 0;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.3rem;
 
     font-size:   var(--intro-text-font-size);
     font-weight: var(--intro-header-font-weight);
     font-family: var(--content-font);
+
+    border-bottom: 2px solid var(--sep-color);
+
+    display: inline;
+    line-height: 30px;
+}
+
+#interview .red-underline {
+    border-bottom: 2px solid var(--sep-color);
+
+    display: inline;
+    line-height: 30px;
+
+    padding: 0.3rem 0 !important;
 }
 
 #interview #what_happens p,
@@ -1771,10 +1785,19 @@ h2
     margin: 0 0 8px;
 }
 
+#interview #what_happens p strong,
+#interview #our_benefits p strong {
+    color: var(--darken-gray);
+}
+
 #interview #what_happens p.arrowed,
 #interview #our_benefits p.arrowed {
     padding: 5px 0 5px 25px;
     margin-bottom: 0;
+}
+
+#interview #our_benefits p.arrowed.extra-margin {
+    margin-top: 12px;
 }
 
 #interview #what_happens p.arrowed:last-child,
@@ -1807,7 +1830,7 @@ h2
 }
 
 #interview #our_benefits h2 {
-    color: var(--intro-text-color);
+    color: var(--darken-gray);
     font-family: var(--standout-font);
     font-size: var(--header-font-size);
     font-weight: var(--header-font-weight);
@@ -1846,7 +1869,7 @@ h2
 }
 
 #interview #you_will_get h2 {
-    color: var(--intro-text-color);
+    color: var(--darken-gray);
     font-family: var(--standout-font);
     font-size: var(--intro-header-font-size);
     font-weight: var(--header-font-weight);
@@ -1883,7 +1906,7 @@ h2
 #interview #you_will_get .col p {
     color: var(--dark-header-text-color);
     padding: 1rem 0;
-    font-size: var(--button-font-size);
+    font-size: var(--navbar-font-size);
     font-weight: var(--def-font-weight);
     font-family: var(--content-font);
     margin: 0;
@@ -1902,7 +1925,7 @@ h2
 }
 
 #interview #request_simulation h2 {
-    color: var(--intro-text-color);
+    color: var(--darken-gray);
     font-family: var(--standout-font);
     font-size: var(--intro-header-font-size);
     font-weight: var(--header-font-weight);

@@ -38,7 +38,7 @@ function hideBanner ()
     return true;
 }
 
-function    showMenuLinks ()
+function showMenuLinks ()
 {
     var open_e  = document.getElementById("menu_open");
     var links_e = document.getElementById("menu_links");
