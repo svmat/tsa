@@ -61,15 +61,23 @@
 
     <div id="intro">
         <div id="navbar">
-            <div class="entry">
-                <a onclick="return smoothScroll('cur');" href="#cur">Curriculum</a>
+            <div class="entry dropdown">
+                <a href="#" aria-haspopup="true">Coaching</a>
+
+                <ul class="dropdown-menu" aria-label="submenu">
+                    <li><a href="./pages/interview">Interview simulator</a></li>
+                    <li><a href="./pages/coaching">1-on-1 Coaching</a></li>
+                </ul>
             </div>
+
             <div class="entry">
                 <a onclick="return smoothScroll('packages');" href="#packages">Packages</a>
             </div>
+
             <div class="entry">
                 <a href="https://m.me/techskillacademyhelp">Contact</a>
             </div>
+
             <div class="entry">
                 <a href="https://techskillacademy.thinkific.com/users/sign_in">Login</a>
             </div>

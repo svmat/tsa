@@ -260,3 +260,76 @@ a.button
 {
     width: 60%;
 }
+
+#interview #intro {
+    background-position: center 90px;
+}
+
+#interview #what_happens .wrapper {
+    max-width: 420px;
+}
+
+#interview #what_happens:before {
+    left: 3%;
+    width: 14rem;
+}
+
+
+#interview #what_happens:after {
+    right: 3%;
+    width: 14rem;
+}
+
+#interview #our_benefits .row {
+    flex-direction: column;
+    align-items: center;
+}
+
+#interview #our_benefits .col {
+    width: 70%;
+}
+
+#interview #you_will_get .col {
+    width: 50%;
+}
+
+#interview #request_simulation .simulation-modal-content {
+    width: 70%;
+}
+
+@media all and (max-width: 668px) {
+    #interview #intro .banner {
+        background-position: -100px -90px;
+    }
+
+    #interview #intro .layer #intro_box {
+        bottom: 15%;
+    }
+
+    #interview #what_happens .wrapper {
+        max-width: 80%;
+    }
+
+    #interview #what_happens:before {
+        left: -13%;
+        width: 13rem;
+    }
+
+
+    #interview #what_happens:after {
+        right: -13%;
+        width: 13rem;
+    }
+
+    #interview #our_benefits .col {
+        width: 90%;
+    }
+
+    #interview #you_will_get .col {
+        width: 90%;
+    }
+
+    #interview #intro .layer #intro_box {
+        padding: 0 30px;
+    }
+}
