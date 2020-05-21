@@ -213,7 +213,9 @@ a.button
 
 #testimonials .wheel
 {
-    	justify-content: flex-start;
+    height: 40.0rem;
+
+    justify-content: center;
 }
 
 @media screen and (max-width: 425px)
