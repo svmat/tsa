@@ -65,8 +65,8 @@
                 <a href="#" aria-haspopup="true">Coaching</a>
 
                 <ul class="dropdown-menu" aria-label="submenu">
-                    <li><a href="./pages/interview">Interview simulator</a></li>
-                    <li><a href="./pages/coaching">1-on-1 Coaching</a></li>
+                    <li><a href="/interview">Interview simulator</a></li>
+                    <!-- li><a href="/coaching">1-on-1 Coaching</a></li -->
                 </ul>
             </div>
 
@@ -85,21 +85,33 @@
 
         <div id="menu">
             <div id="menu_open"  onclick="return showMenuLinks();" class="open"></div>
+
             <div id="menu_links" class="links">
                 <div onclick="return hideMenuLinks();" class="close"></div>
+
                 <div class="container">
-                    <a onclick="hideMenuLinks(); return smoothScroll('cur');"
-                       href="#cur">
-                        Curriculum
-                    </a>
-                    <a onclick="hideMenuLinks(); return smoothScroll('packages');"
-                       href="#packages">
+                    <div class="accordion">
+                        <div class="accordion-menu">
+                            <input type="checkbox" name="accordion-checkbox" id="accordion-checkbox" />
+                            <label for="accordion-checkbox">Coaching</label>
+
+                            <div class="accordion-content">
+                                <a onclick="return hideMenuLinks();" href="/interview">Interview simulator</a>
+                                <!-- a onclick="return hideMenuLinks();" href="/coaching">1-on-1 Coaching</a -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <a onclick="return hideMenuLinks();"
+                       href="https://techskillacademy.net/#packages">
                         Packages
                     </a>
+
                     <a onclick="return hideMenuLinks();"
                        href="https://m.me/techskillacademyhelp">
                         Contact
                     </a>
+
                     <a onclick="return hideMenuLinks();"
                        href="https://techskillacademy.thinkific.com/users/sign_in">
                         Login
