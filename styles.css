@@ -2035,3 +2035,57 @@ h2
     cursor: pointer;
 }
 
+#interview_thank_you #intro {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    top: 1em;
+    justify-content: center;
+    z-index: 0;
+    background-image: url(media/interview_thank_you3.jpg);
+    background-position: center 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-color: black;
+}
+
+#interview_thank_you #intro .layer h1
+{
+    font-weight: var(--header-font-weight);
+    margin: 0.5em;
+}
+
+#interview_thank_you .line_sep
+{
+    margin-top: 0px;
+    width: 10rem;
+    border-bottom-width: 0.3rem;
+}
+
+#interview_thank_you #intro .layer h2
+{
+    color: var(--intro-text-color);
+    padding-bottom: 0.5rem;
+    font-family: var(--content-font);
+    font-weight: var(--intro-text-font-weight);
+}
+
+#interview_thank_you .social_media_btns 
+{
+    display: flex;
+    justify-content: center;
+}
+
+#interview_thank_you .social_media_btns a
+{
+    display: inline-block;
+    margin: 1em 3em 0px 0px;
+    height: 3em;
+    filter: grayscale(70%);
+    text-decoration: none;
+}
+
+#interview_thank_you .social_media_btns a:hover
+{
+    filter: grayscale(0%);
+}

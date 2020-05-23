@@ -334,4 +334,16 @@ a.button
     #interview #intro .layer #intro_box {
         padding: 0 30px;
     }
+
+    #interview_thank_you .social_media_btns a
+    {
+        margin: 0px;
+        width: 3em;
+        padding: 0 1em;
+    }
+
+   #interview_thank_you #intro .layer h2{
+        padding-bottom: 0px;
+        font-size: var(--menu-links-font-size);
+    }
 }

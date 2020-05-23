@@ -37,8 +37,8 @@
           content="QA,Quality Assurance,tester,online course,QA analyst,Software quality assurance,QA course for beginners,QA courses,school,bootcamp,hacker school,Chicago">
     <meta name="geo.placename" content="Chicago">
     <meta name="description"
-          content="TechSkillAcademy is an online school for QA testing certification.
-                   Learn why a career is the right choice for your future and enroll
+          content="TechSkillAcademy is an online school for QA online training.
+                   Learn why IT career is the right choice for your future and enroll
                    today!">
 
     <script type="text/javascript" src="../../code.js"></script>
@@ -260,28 +260,35 @@
 
                     <h3>Fill the form to request simulation session</h3>
 
-                    <form>
-                        <div class="form-group">
-                            <label for="email">Email address</label>
-                            <input type="email" class="form-control" id="email" placeholder="Enter email">
-                        </div>
-
+                    <form action="https://www.aweber.com/scripts/addlead.pl" method="post">
+                        <input type="hidden" name="listname" value="awlist5620153"> 
+                        <input type="hidden" name="redirect" value=""> 
+                        <input type="hidden" name="meta_adtracking" value="Interview_Request_Form"> 
+                        <input type="hidden" name="meta_message" value="1"> 
+                        <input type="hidden" name="meta_required" value="name (awf_first),name (awf_last),email"> 
+                        <input type="hidden" name="meta_forward_vars" value="0"> 
                         <div class="form-group">
                             <label for="firstName">First name</label>
-                            <input type="text" class="form-control" id="firstName" placeholder="Enter first name">
+                            <input id="awf_field-106900349-first" type="text" class="text form-control" name="name (awf_first)" value=""  onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " tabindex="500" placeholder="Enter first name">
                         </div>
 
                         <div class="form-group">
                             <label for="lastName">Last name</label>
-                            <input type="text" class="form-control" id="lastName" placeholder="Enter last name">
+                            <input id="awf_field-106900349-last" class="text form-control" type="text" name="name (awf_last)" value=""  onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " tabindex="501" placeholder="Enter last name">
                         </div>
 
                         <div class="form-group">
-                            <label for="comments">Comments</label>
-                            <textarea class="form-control" id="comments" rows="3"></textarea>
+                            <label for="email">Email address</label>
+                            <input class="text  form-control" id="awf_field-106900350" type="text" name="email" value="" tabindex="502" onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';}" placeholder="Enter email">
                         </div>
 
-                        <button type="submit" class="submit-button">Request</button>
+
+                        <div class="form-group">
+                            <label for="comments">Phone Number (optional)</label>
+                            <input type="text" id="awf_field-106900351" class="text form-control" name="custom Phone Number" value=""  onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " tabindex="503">
+                        </div>
+
+                        <button name="submit" type="submit" class="submit-button" tabindex="504">Request</button>
                     </form>
                 </div>
             </div>
