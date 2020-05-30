@@ -61,12 +61,19 @@
 
     <div id="intro">
         <div id="navbar">
+            <a class="nav-logo" href="https://techskillacademy.net/">
+                <img id="intro_logo1"
+                     class="item logo"
+                     src="../../media/intro_logo.png"
+                     alt="TechSkillAcademy">
+            </a>
+
             <div class="entry dropdown">
                 <a href="#" aria-haspopup="true">Coaching</a>
 
                 <ul class="dropdown-menu" aria-label="submenu">
                     <li><a href="/interview">Interview simulator</a></li>
-                    <!-- li><a href="/coaching">1-on-1 Coaching</a></li -->
+                    <li><a href="/coaching">Coaching / Consultation</a></li>
                 </ul>
             </div>
 
@@ -84,6 +91,13 @@
         </div>
 
         <div id="menu">
+            <a class="nav-logo" href="https://techskillacademy.net/">
+                <img id="intro_logo"
+                     class="item logo"
+                     src="../../media/intro_logo.png"
+                     alt="TechSkillAcademy">
+            </a>
+
             <div id="menu_open"  onclick="return showMenuLinks();" class="open"></div>
 
             <div id="menu_links" class="links">
@@ -97,7 +111,7 @@
 
                             <div class="accordion-content">
                                 <a onclick="return hideMenuLinks();" href="/interview">Interview simulator</a>
-                                <!-- a onclick="return hideMenuLinks();" href="/coaching">1-on-1 Coaching</a -->
+                                <a onclick="return hideMenuLinks();" href="/coaching">Coaching / Consultation </a>
                             </div>
                         </div>
                     </div>
@@ -121,11 +135,6 @@
         </div>
 
         <div class="layer">
-            <img id="intro_logo"
-                 class="item logo"
-                 src="../../media/intro_logo.png"
-                 alt="TechSkillAcademy">
-
             <div id="intro_box" class="box item">
                 <h1>
                     Are you ready for your job interview?
@@ -261,12 +270,12 @@
                     <h3>Fill the form to request simulation session</h3>
 
                     <form action="https://www.aweber.com/scripts/addlead.pl" method="post">
-                        <input type="hidden" name="listname" value="awlist5620153"> 
-                        <input type="hidden" name="redirect" value="https://techskillacademy.net/interview_thank_you"> 
-                        <input type="hidden" name="meta_adtracking" value="Interview_Request_Form"> 
-                        <input type="hidden" name="meta_message" value="1"> 
-                        <input type="hidden" name="meta_required" value="name (awf_first),name (awf_last),email"> 
-                        <input type="hidden" name="meta_forward_vars" value="0"> 
+                        <input type="hidden" name="listname" value="awlist5620153">
+                        <input type="hidden" name="redirect" value="https://techskillacademy.net/interview_thank_you">
+                        <input type="hidden" name="meta_adtracking" value="Interview_Request_Form">
+                        <input type="hidden" name="meta_message" value="1">
+                        <input type="hidden" name="meta_required" value="name (awf_first),name (awf_last),email">
+                        <input type="hidden" name="meta_forward_vars" value="0">
                         <div class="form-group">
                             <label for="firstName">First name</label>
                             <input id="awf_field-106900349-first" type="text" class="text form-control" name="name (awf_first)" value=""  onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " tabindex="500" placeholder="Enter first name" required>
@@ -324,7 +333,6 @@
             const closeButton = document.querySelector("#interview #request_simulation .close-button");
 
             function toggleModal() {
-                console.log('Click', modal, trigger, closeButton)
                 modal.classList.toggle("show-modal");
             }
 
