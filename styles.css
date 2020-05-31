@@ -1628,7 +1628,7 @@ h2
 }
 
 /*------------------------------------------------------------------*/
-/*------------ START INTERVIEW PAGE --------------------------------*/
+/*------------ START INTERVIEW PAGE -------------------------------*/
 /*----------------------------------------------------------------*/
 
 #interview {
@@ -1643,10 +1643,14 @@ h2
 #interview #navbar .nav-logo,
 #interview #menu .nav-logo {
     position: absolute;
-    left: 1rem;
+    left: 4rem;
     top: 8px;
     display: flex;
     align-items: center;
+}
+
+#interview #menu .nav-logo {
+    left: 2rem;
 }
 
 #interview #intro .nav-logo .logo {
@@ -1869,6 +1873,7 @@ h2
 }
 
 #interview #our_benefits .col img {
+    box-shadow: 0 8px 17px 2px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.2);
     width: 100%;
 }
 
@@ -2126,10 +2131,14 @@ h2
 #coaching #navbar .nav-logo,
 #coaching #menu .nav-logo {
     position: absolute;
-    left: 1rem;
+    left: 4rem;
     top: 8px;
     display: flex;
     align-items: center;
+}
+
+#coaching #menu .nav-logo {
+    left: 2rem;
 }
 
 #coaching #intro .nav-logo .logo {
@@ -2155,7 +2164,7 @@ h2
     top: 90px;
     justify-content: center;
     z-index: 0;
-    background-image: url(media/interview_copy.jpg);
+    background-image: url(media/coaching.jpg);
     background-position: center -90px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -2207,7 +2216,7 @@ h2
 
 #coaching #what_happens:before {
     content: '';
-    background-image: url(media/clouds_image.png);
+    background-image: url(media/pitch_decoration.svg);
     background-size: 100% 100%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -2217,13 +2226,13 @@ h2
     left: 2%;
     top: 10%;
     height: 25rem;
-    transform: rotateY(180deg);
+    /*transform: rotateY(180deg);*/
     z-index: -1;
 }
 
 #coaching #what_happens:after {
     content: '';
-    background-image: url(media/clouds_image.png);
+    background-image: url(media/pitch_decoration.svg);
     background-size: 100% 100%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -2239,7 +2248,7 @@ h2
 #coaching #what_happens .wrapper {
     max-width: 700px;
     width: 100%;
-    margin: 60px auto 60px;
+    margin: 60px auto 40px;
     padding: 0 25px;
     box-sizing: border-box;
 }
@@ -2268,6 +2277,8 @@ h2
 
     display: inline;
     line-height: 30px;
+
+    text-align: center;
 }
 
 #coaching .red-underline {
@@ -2286,7 +2297,7 @@ h2
     font-weight: var(--def-font-weight);
     font-family: var(--content-font);
     position: relative;
-    margin: 0 0 8px;
+    margin: 0;
 }
 
 #coaching #what_happens p strong {
@@ -2319,43 +2330,86 @@ h2
     top: 10px;
 }
 
-#coaching #what_happens .benefit {
-    margin-top: 20px;
+#coaching #what_happens .our_benefits {
+    width: 60%;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
-#coaching #what_happens .benefit h3 + .arrowed {
-    margin-top: 20px;
-}
-
-#coaching #what_happens .row {
-    margin: 30px -15% 0;
+#coaching #what_happens .our_benefits .row {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-bottom: 20px;
 }
 
-#coaching #what_happens .row .col {
-    width: calc(50% - 24px);
+#coaching #what_happens .our_benefits .col {
+    width: 50%;
+    padding: 0 30px;
 }
 
-#coaching #what_happens .card {
-    background: #ffffff;
+#coaching #what_happens .our_benefits .col h3 + p {
+    margin-top: 15px;
+}
+
+#coaching #what_happens .our_benefits .col img {
     box-shadow: 0 8px 17px 2px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.2);
-    box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -7px rgba(0,0,0,0.2);
-    padding: 32px;
-    height: 300px;
+    width: 100%;
 }
 
-#coaching #what_happens .card.bordered {
-    border-radius: 12px;
+#coaching #you_will_get {
+    margin: 70px 0 80px;
 }
 
-#coaching #what_happens .card h3 + .arrowed {
-    margin-top: 20px;
+#coaching #you_will_get .wrapper {
+    width: 80%;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
-#coaching #what_happens .card .arrowed {
-    margin-bottom: 5px;
+#coaching #you_will_get h2 {
+    color: var(--darken-gray);
+    font-family: var(--standout-font);
+    font-size: var(--intro-header-font-size);
+    font-weight: var(--header-font-weight);
+    position: relative;
+    padding: 1rem 0;
+    margin: 0 0 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#coaching #you_will_get .row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+#coaching #you_will_get .col {
+    width: 25%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0 0 20px;
+}
+
+#coaching #you_will_get .col img {
+    height: 112px;
+    width: 100%;
+    margin: 0 0 20px;
+}
+
+#coaching #you_will_get .col p {
+    color: var(--dark-header-text-color);
+    padding: 1rem 0;
+    font-size: var(--navbar-font-size);
+    font-weight: var(--def-font-weight);
+    font-family: var(--content-font);
+    margin: 0;
+    text-align: center;
+    width: 80%;
 }
 
 #coaching #request_simulation {

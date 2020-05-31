@@ -263,6 +263,11 @@ a.button
     width: 60%;
 }
 
+
+/*------------------------------------------------------------------*/
+/*------------ START INTERVIEW PAGE -------------------------------*/
+/*----------------------------------------------------------------*/
+
 #interview #intro {
     background-position: center 90px;
 }
@@ -343,7 +348,109 @@ a.button
     }
 
    #interview_thank_you #intro .layer h2{
-        padding-bottom: 0px;
+        padding-bottom: 0;
         font-size: var(--menu-links-font-size);
     }
 }
+
+/*------------------------------------------------------------------*/
+/*-------------- END INTERVIEW PAGE -------------------------------*/
+/*----------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------*/
+/*------------- START COACHING PAGE -------------------------------*/
+/*----------------------------------------------------------------*/
+
+#coaching #intro {
+    background-position: center 90px;
+}
+
+#coaching #what_happens .wrapper {
+    max-width: 70%;
+}
+
+#coaching #what_happens:before {
+    left: -6%;
+    width: 23rem;
+}
+
+
+#coaching #what_happens:after {
+    right: -6%;
+    width: 23rem;
+}
+
+#coaching #what_happens h3 {
+    font-size: var(--navbar-font-size);
+}
+
+#coaching #what_happens .our_benefits .row {
+    flex-direction: column;
+    align-items: center;
+}
+
+#coaching #what_happens .our_benefits .col {
+    width: 75%;
+    margin-bottom: 20px;
+}
+
+#coaching #you_will_get .col {
+    width: 50%;
+}
+
+#coaching #request_simulation .simulation-modal-content {
+    width: 70%;
+}
+
+@media all and (max-width: 668px) {
+    #coaching #intro .banner {
+        background-position: -470px -90px;
+    }
+
+    #coaching #intro .layer #intro_box {
+        bottom: 15%;
+    }
+
+    #coaching #what_happens .wrapper {
+        max-width: 80%;
+    }
+
+    #coaching #what_happens:before {
+        left: -10%;
+        width: 14rem;
+        height: 14rem;
+        top: 20%;
+    }
+
+    #coaching #what_happens:after {
+        right: -10%;
+        width: 15rem;
+        bottom: 10%;
+        height: 15rem;
+    }
+
+    #coaching #what_happens .our_benefits {
+        width: 80%;
+    }
+
+    #coaching #our_benefits .col {
+        width: 90%;
+    }
+
+    #coaching #you_will_get .col {
+        width: 85%;
+    }
+
+    #coaching #intro .layer #intro_box {
+        padding: 0 30px;
+    }
+
+    #coaching #you_will_get .col img {
+        margin: 0 0 5px;
+    }
+}
+
+/*------------------------------------------------------------------*/
+/*--------------- END COACHING PAGE -------------------------------*/
+/*----------------------------------------------------------------*/
