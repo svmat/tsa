@@ -295,6 +295,7 @@ h2
     width: 100%;
     text-align: center;
     transition: background .3s;
+    text-align: left;
 }
 
 #navbar .dropdown-menu li:hover {
@@ -1676,7 +1677,7 @@ h2
     top: 90px;
     justify-content: center;
     z-index: 0;
-    background-image: url(media/interview_copy.jpg);
+    background-image: url(media/interview.jpg);
     background-position: center -90px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -2164,8 +2165,8 @@ h2
     top: 90px;
     justify-content: center;
     z-index: 0;
-    background-image: url(media/coaching.jpg);
-    background-position: center -90px;
+    background-image: url(media/coaching_us.jpg);
+    background-position: center -80px;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -2216,39 +2217,39 @@ h2
 
 #coaching #what_happens:before {
     content: '';
-    background-image: url(media/pitch_decoration.svg);
+    background-image: url(media/message.svg);
     background-size: 100% 100%;
     background-position: center center;
     background-repeat: no-repeat;
     opacity: 0.45;
     position: absolute;
-    width: 24rem;
+    width: 15rem;
     left: 2%;
-    top: 10%;
-    height: 25rem;
-    /*transform: rotateY(180deg);*/
+    top: 15%;
+    height: 18rem;
+    transform: rotateY(180deg);
     z-index: -1;
 }
 
 #coaching #what_happens:after {
     content: '';
-    background-image: url(media/pitch_decoration.svg);
+    background-image: url(media/message.svg);
     background-size: 100% 100%;
     background-position: center center;
     background-repeat: no-repeat;
     opacity: 0.45;
     position: absolute;
-    width: 24rem;
+    width: 15rem;
     right: 2%;
-    bottom: 0;
-    height: 25rem;
+    bottom: 10%;
+    height: 18rem;
     z-index: -1;
 }
 
 #coaching #what_happens .wrapper {
     max-width: 700px;
     width: 100%;
-    margin: 60px auto 40px;
+    margin: 60px auto 60px;
     padding: 0 25px;
     box-sizing: border-box;
 }
@@ -2305,7 +2306,7 @@ h2
 }
 
 #coaching #what_happens p.arrowed {
-    padding: 5px 0 5px 25px;
+    padding: 5px 0 15px 25px;
     margin-bottom: 0;
 }
 

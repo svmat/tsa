@@ -371,14 +371,15 @@ a.button
 }
 
 #coaching #what_happens:before {
-    left: -6%;
-    width: 23rem;
+    left: -7%;
+    width: 17rem;
 }
 
 
 #coaching #what_happens:after {
-    right: -6%;
-    width: 23rem;
+    right: 0;
+    width: 14rem;
+    bottom: 35%;
 }
 
 #coaching #what_happens h3 {
@@ -391,8 +392,8 @@ a.button
 }
 
 #coaching #what_happens .our_benefits .col {
-    width: 75%;
-    margin-bottom: 20px;
+    width: 85%;
+    margin-bottom: 70px;
 }
 
 #coaching #you_will_get .col {
@@ -403,9 +404,13 @@ a.button
     width: 70%;
 }
 
+#coaching #what_happens p.arrowed {
+    padding: 5px 0 8px 25px;
+}
+
 @media all and (max-width: 668px) {
     #coaching #intro .banner {
-        background-position: -470px -90px;
+        background-position: -200px -90px;
     }
 
     #coaching #intro .layer #intro_box {
@@ -417,17 +422,15 @@ a.button
     }
 
     #coaching #what_happens:before {
-        left: -10%;
-        width: 14rem;
-        height: 14rem;
-        top: 20%;
+        left: -7%;
+        width: 10rem;
+        top: 26%;
     }
 
     #coaching #what_happens:after {
-        right: -10%;
-        width: 15rem;
-        bottom: 10%;
-        height: 15rem;
+        right: -9%;
+        width: 12rem;
+        bottom: 24%;
     }
 
     #coaching #what_happens .our_benefits {
@@ -448,6 +451,24 @@ a.button
 
     #coaching #you_will_get .col img {
         margin: 0 0 5px;
+    }
+
+    #coaching #you_will_get {
+        margin: 0 0 50px;
+    }
+}
+
+@media all and (max-width: 400px) {
+    #coaching #what_happens:before {
+        left: -7%;
+        width: 10rem;
+        top: 26%;
+    }
+
+    #coaching #what_happens:after {
+        right: -9%;
+        width: 12rem;
+        bottom: 20%;
     }
 }
 
