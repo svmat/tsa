@@ -71,9 +71,9 @@
     --packages-new-price-font-size:      130%;
     --faq-header-font-size:              150%;
     --testimonials-scroll-font-size:     300%;
-    --testimonials-header-font-size:     150%;
+    --testimonials-header-font-size:     180%;
     --testimonials-text-font-size:       100%;
-    --testimonials-quote-font-size:      900%;
+    --testimonials-quote-font-size:      700%;
 
     --intro-header-font-weight:        900;
     --intro-text-font-weight:          600;
@@ -85,7 +85,7 @@
     --cur-checkmark-text-font-weight:  900;
     --testimonials-scroll-font-weight: 900;
     --testimonials-header-font-weight: 900;
-    --testimonials-text-font-weight:   900;
+    --testimonials-text-font-weight:   400;
     --testimonials-quote-font-weight:  900;
 
     --page-min-width:     360px;

@@ -660,6 +660,8 @@ h2
     margin-bottom: 0.5rem;
 
     white-space: nowrap;
+
+    text-align: center;
 }
 
 #highlights .group .item p
@@ -667,6 +669,8 @@ h2
     width:   100%;
     margin:  0.0rem;
     padding: 0.25rem;
+
+    text-align: center;
 }
 
 
@@ -834,7 +838,7 @@ h2
 #whoweare .body .profile .desc h2
 {
     margin:         0.0rem;
-    padding-bottom: 0.5rem;
+    padding-bottom: 1.5rem;
 
     font-size:   var(--whoweare-profile-header-font-size);
     font-weight: var(--emph-font-weight);
@@ -843,6 +847,7 @@ h2
 #whoweare .body .profile .desc p
 {
     margin: 0.0rem;
+    line-height: 1.25rem;
 }
 
 
@@ -1131,9 +1136,19 @@ h2
     font-weight: var(--testimonials-scroll-font-weight);
 }
 
-#testimonials .wheel .scroll:hover
+#testimonials .wheel .scroll:hover img
 {
-    color: var(--link-color);
+    opacity: 0.7;
+}
+
+#testimonials .wheel .scroll img {
+    width: 32px;
+    height: 32px;
+    transition: opacity .3s;
+}
+
+#testimonials .wheel .scroll:first-child img {
+    transform: rotate(180deg);
 }
 
 #testimonials .wheel .content
@@ -1155,24 +1170,27 @@ h2
 {
     animation-name:            anim_wheelin;
     animation-fill-mode:       forwards;
-    animation-duration:        2s;
+    animation-duration:        .8s;
     animation-iteration-count: 1;
+    animation-timing-function: ease-out;
 }
 
 #testimonials .wheel .content .anim_left
 {
     animation-name:            anim_wheelleft;
     animation-fill-mode:       forwards;
-    animation-duration:        2s;
+    animation-duration:        .8s;
     animation-iteration-count: 1;
+    animation-timing-function: ease-out;
 }
 
 #testimonials .wheel .content .anim_right
 {
     animation-name:            anim_wheelright;
     animation-fill-mode:       forwards;
-    animation-duration:        2s;
+    animation-duration:        .8s;
     animation-iteration-count: 1;
+    animation-timing-function: ease-out;
 }
 
 #testimonials .wheel .content .hidden_left
@@ -1221,23 +1239,24 @@ h2
 
 #testimonials .wheel .content .statement .text h1:before
 {
-    content: open-quote;
+    content: '“';
 
     opacity: 0.5;
 
     position: absolute;
-    top:      -1.5rem;
-    left:     -0.5rem;
+    top:      -2rem;
+    left:     0;
 
     font-size:   var(--testimonials-quote-font-size);
     font-weight: var(--testimonials-quote-font-weight);
+    font-family: 'NONE', 'sans-serif';
 }
 
 #testimonials .wheel .content .statement .text h1:after
 {
     visibility: hidden;
 
-    content: close-quote;
+    content: '”';
 }
 
 #testimonials .wheel .content .statement .text h1
@@ -1250,6 +1269,8 @@ h2
     text-align:  left;
     font-size:   var(--testimonials-header-font-size);
     font-weight: var(--testimonials-header-font-weight);
+
+    font-family: var(--standout-font);
 }
 
 #testimonials .wheel .content .statement .text p
@@ -1257,6 +1278,7 @@ h2
     text-align:  left;
     font-size:   var(--testimonials-text-font-size);
     font-weight: var(--testimonials-text-font-weight);
+    font-family: var(--content-font);
 }
 
 
