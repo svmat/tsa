@@ -8,6 +8,9 @@
     <meta name="language" content="en">
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
 
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+
     <link rel="stylesheet" type="text/css" href="vars.css">
     <link rel="stylesheet"
           type="text/css"
@@ -784,6 +787,21 @@
             </h1>
             <a class="button" onclick="return smoothScroll('packages');" href="#packages">
                 Sign Up Today
+            </a>
+        </div>
+    </div>
+
+    <div id="banner" class="modal" onclick="if(event.target == this) hideBanner(); return true;">
+        <div class="content">
+            <div onclick="return hideBanner();" class="close" title="Close"></div>
+            <div class="details">
+                <h2>Join us for a free webinar</h2>
+                <h3>How to start your career in IT without technical background</h3>
+            </div>
+            <img src="media/banner_attn.jpg">
+            <a class="button"
+               href="https://techskillacademy.webinarninja.com/live-webinars/387397/register">
+                Reserve My Seat
             </a>
         </div>
     </div>
