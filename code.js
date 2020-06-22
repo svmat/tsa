@@ -8,7 +8,6 @@ var testimonials_wheel = {
 
 var animation_id    = null;
 var last_client_top = -1;
-var display_banner = true;
 
 
 function isVisible (e)
@@ -27,18 +26,13 @@ function isVisible (e)
 
 function showBanner ()
 {
-    if (display_banner)
-    {
-        document.getElementById("banner").style.display = "block";
-        return true;
-    }
-    return false;
+    document.getElementById("banner").style.display = "block";
+    return true;
 }
 
 function hideBanner ()
 {
     document.getElementById("banner").style.display = "none";
-    display_banner = false;
     return true;
 }
 
@@ -240,7 +234,6 @@ function updatePage ()
 function handleScroll ()
 {
     updatePage();
-    showBanner();
 }
 
 function initPage ()
@@ -256,6 +249,7 @@ function initPage ()
 
     initWheel(testimonials_wheel, "#testimonials .wheel .content .statement");
     updatePage();
+    showBanner();
 }
 
 
