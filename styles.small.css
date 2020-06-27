@@ -475,3 +475,109 @@ a.button
 /*------------------------------------------------------------------*/
 /*--------------- END COACHING PAGE -------------------------------*/
 /*----------------------------------------------------------------*/
+
+
+
+/*------------------------------------------------------------------*/
+/*------------- START COACHING PAGE -------------------------------*/
+/*----------------------------------------------------------------*/
+
+#landing #intro {
+    height: 60rem;
+}
+
+#landing #intro_box {
+    top: 20%;
+}
+
+#landing #intro .layer a {
+    margin-top: 3rem;
+}
+
+#landing .second-page:before {
+    left: -10%;
+}
+
+
+#landing .second-page:after {
+    right: -3%;
+}
+
+#landing #request_simulation .simulation-modal-content {
+    width: 70%;
+}
+
+@media all and (max-width: 668px) {
+
+    #landing .second-page {
+        padding: 80px 0;
+    }
+
+    #landing .second-page:before {
+        left: -10%;
+        width: 13rem;
+    }
+
+
+    #landing .second-page:after {
+        right: -3%;
+        width: 13rem;
+    }
+
+    #landing .second-page p {
+        width: 70%;
+    }
+
+    #landing .second-page .button {
+        bottom: 10%;
+    }
+
+    #landing .third-page h2 {
+        width: 90%;
+        font-size: 210%;
+    }
+
+    .countdown-container h3 {
+        /*background-color: #f5f5f5;*/
+        padding: 8px;
+        border-radius: 8px;
+    }
+}
+
+@media all and (max-width: 440px) {
+
+    /*.countdown-container {*/
+    /*    margin-top: 100px;*/
+    /*}*/
+
+    .countdown-container h2 {
+        margin: 24px 24px 12px;
+    }
+
+    .countdown-container li {
+        font-size: 80%;
+        font-weight: 500;
+        width: 70px;
+        height: 60px;
+    }
+}
+
+@media all and (max-width: 400px) {
+
+    #landing #intro .layer h1 {
+        font-size: 190%;
+        width: 80%;
+    }
+
+    #landing #intro .layer a {
+        margin-top: 9rem;
+    }
+
+    #landing .second-page p {
+        font-size: 110%;
+    }
+}
+
+/*------------------------------------------------------------------*/
+/*--------------- END LANDING PAGE -------------------------------*/
+/*----------------------------------------------------------------*/
