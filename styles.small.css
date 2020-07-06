@@ -570,7 +570,8 @@ a.button
     }
 
     #landing #intro .layer a {
-        margin-top: 9rem;
+        width: 9rem;
+	margin-top: 0rem;
     }
 
     #landing .second-page p {
