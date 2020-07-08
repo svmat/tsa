@@ -2136,6 +2136,11 @@ h2
     text-decoration: none;
 }
 
+#interview_thank_you .social_media_btns img
+{
+    height: 2.0rem;
+}
+
 #interview_thank_you .social_media_btns a:hover
 {
     filter: grayscale(0%);
