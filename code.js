@@ -280,7 +280,7 @@ function initPage ()
 
     initWheel(testimonials_wheel, "#testimonials .wheel .content .statement");
     updatePage();
-    showBanner();
+    //showBanner();
 
     /* Here you can initialize Countdown timer. Just pass a valid date. */
     initCountdown('Jul 12, 2020 17:00:00');
