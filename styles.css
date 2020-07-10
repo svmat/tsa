@@ -2138,7 +2138,7 @@ h2
 
 #interview_thank_you .social_media_btns img
 {
-    height: 2.0rem;
+    max-height: 5.0rem;
 }
 
 #interview_thank_you .social_media_btns a:hover

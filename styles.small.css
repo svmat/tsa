@@ -347,6 +347,11 @@ a.button
         padding: 0 1em;
     }
 
+    #interview_thank_you .social_media_btns img
+    {
+        height: 2.0rem;
+    }
+
    #interview_thank_you #intro .layer h2{
         padding-bottom: 0;
         font-size: var(--menu-links-font-size);
