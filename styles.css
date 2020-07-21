@@ -524,8 +524,8 @@ h2
     position: relative;
 
     width:         100%;
-    /*margin-top:    var(--section-gap);*/
-    margin-top:    11rem;
+    margin-top:    var(--section-gap);
+    /*margin-top:    11rem;*/
     margin-bottom: var(--section-gap);
 
     display:         flex;
@@ -2860,7 +2860,7 @@ h2
 /*------------------------------------------------*/
 
 .countdown-container {
-    display: inline-block;
+    display: none;
     position: absolute;
     bottom: 10%;
 }
