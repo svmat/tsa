@@ -440,9 +440,14 @@ h2
     left: 5%;
 }
 
+#intro_logo .webinar
+{
+    width: 10rem;
+}
+
 #intro_box
 {
-    top: 22%;
+    top: 15%;
 }
 
 #intro .layer
@@ -617,6 +622,19 @@ h2
     height: 645px;
 }
 
+#emailopening .video
+{
+    margin-top: 3.0rem;
+    margin-bottom: 2rem;
+}
+
+#emailopening .video iframe
+{
+    border: none;
+
+    width:  512px;
+    height: 328px;
+}
 
 #highlights
 {
@@ -2913,3 +2931,78 @@ h2
     font-size: 130%;
 }
 
+
+
+/*--------------------------------------------------*/
+/*-------------- END LANDING PAGE ----------------*/
+/*------------------------------------------------*/
+
+
+
+/*---------------------------------------------------*/
+/*------------ START WEBINAR THANK YOU PAGE ---------*/
+/*-------------------------------------------------*/
+#webinar_thank_you #intro {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    top: 1em;
+    justify-content: center;
+    z-index: 0;
+    background-image: url(media/interview_thank_you3.jpg);
+    background-position: center 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-color: black;
+}
+
+#webinar_thank_you #intro .layer h1
+{
+    font-weight: var(--header-font-weight);
+    margin: 0.5em;
+}
+
+#webinar_thank_you #intro_logo
+{
+    width:10rem;
+}
+
+#webinar_thank_you .line_sep
+{
+    margin-top: 0px;
+    width: 10rem;
+    border-bottom-width: 0.3rem;
+}
+
+#webinar_thank_you #intro .layer h2
+{
+    color: var(--intro-text-color);
+    padding-bottom: 0.5rem;
+    font-family: var(--content-font);
+    font-weight: var(--intro-text-font-weight);
+}
+
+#webinar_thank_you .social_media_btns
+{
+    display: flex;
+    justify-content: center;
+}
+
+#webinar_thank_you .social_media_btns a
+{
+    display: inline-block;
+    margin: 1em 2em 0px 0px;
+    height: 1.5em;
+    filter: grayscale(60%);
+    text-decoration: none;
+}
+
+#webinar_thank_you .social_media_btns img
+{
+    max-height: 5.0rem;
+}
+
+#webinar_thank_you .social_media_btns a:hover
+{
+    filter: grayscale(0%);
+}

@@ -587,3 +587,25 @@ a.button
 /*------------------------------------------------------------------*/
 /*--------------- END LANDING PAGE -------------------------------*/
 /*----------------------------------------------------------------*/
+
+#webinar_thank_you #intro_box
+{
+    padding: 5rem;
+}
+#webinar_thank_you .social_media_btns a
+{
+    margin: 0px;
+    width: 3em;
+    padding: 0 1em;
+}
+
+#webinar_thank_you .social_media_btns img
+{
+    height: 2.0rem;
+}
+
+#webinar_thank_you #intro .layer h2{
+    padding: 0rem 5rem 0rem 5rem;
+    font-size: var(--menu-links-font-size);
+}
+}
