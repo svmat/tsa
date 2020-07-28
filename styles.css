@@ -447,7 +447,7 @@ h2
 
 #intro_box
 {
-    top: 15%;
+    top: 22%;
 }
 
 #intro .layer
@@ -2965,6 +2965,11 @@ h2
 #webinar_thank_you #intro_logo
 {
     width:10rem;
+}
+
+#webinar_thank_you #intro_box
+{
+    top: 15%;
 }
 
 #webinar_thank_you .line_sep

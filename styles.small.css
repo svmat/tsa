@@ -588,10 +588,16 @@ a.button
 /*--------------- END LANDING PAGE -------------------------------*/
 /*----------------------------------------------------------------*/
 
+
+/*------------------------------------------------------------------*/
+/*------------ START WEBINAR THANK YOU PAGE -----------------------*/
+/*----------------------------------------------------------------*/
+
 #webinar_thank_you #intro_box
 {
-    padding: 5rem;
+    top: 22%;
 }
+
 #webinar_thank_you .social_media_btns a
 {
     margin: 0px;
@@ -604,8 +610,20 @@ a.button
     height: 2.0rem;
 }
 
-#webinar_thank_you #intro .layer h2{
+#webinar_thank_you #intro .layer h2
+{
     padding: 0rem 5rem 0rem 5rem;
     font-size: var(--menu-links-font-size);
 }
+
+#emailopening h3
+{
+    max-width: 100%;
+    margin: 10px;
+}
+
+#emailopening .video iframe
+{
+    width:  100%;
+    height: calc(100vw * 0.63);
 }
