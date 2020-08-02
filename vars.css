@@ -2,7 +2,7 @@
 {
     --background-color:         rgba(255, 255, 255, 1.0);
     --modal-background-color:   rgba(  0,   0,   0, 0.4);
-    --button-background-color:  rgba(255, 100, 100, 1.0);
+    --button-background-color: rgb(255, 100, 100);
     --navbar-background-color:  rgba(  0,   0,   0, 0.0);
     --navbar-underline-color:   rgba(255, 100, 100, 1.0);
     --menu-background-color:    rgba(  0,   0,   0, 0.0);

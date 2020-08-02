@@ -1109,6 +1109,169 @@ h2
     content: '\2713';
 }
 
+#packages .payment-ways {
+    margin: 50px auto 0;
+    width: 90%;
+}
+
+#packages .payment-ways h4 {
+    text-align: center;
+    margin: 0 auto 10px;
+    color: var(--intro-text-color);
+    font-family: var(--standout-font);
+    font-size: 180%;
+    font-weight: var(--header-font-weight);
+    width: 60%;
+}
+
+#packages .payment-ways p {
+    text-align: center;
+    margin: 40px auto 50px;
+    color: var(--intro-text-color);
+    font-family: var(--standout-font);
+    font-size: 170%;
+    font-weight: var(--header-font-weight);
+}
+
+#packages .payment-ways .bullet-points {
+    margin: 0 0 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+#packages .payment-ways .point {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+}
+
+#packages .payment-ways .point img {
+    width: 120px;
+    margin: 0 0 30px;
+}
+
+#packages .payment-ways .point h6 {
+    text-align: center;
+    margin: 0 0 30px;
+    color: var(--intro-text-color);
+    font-family: var(--standout-font);
+    font-size: 130%;
+    font-weight: 600;
+}
+
+#packages .payment-ways .point p {
+    text-align: center;
+    margin: 0;
+    color: var(--dark-header-text-color);
+    font-family: var(--standout-font);
+    font-size: 120%;
+    font-weight: 500;
+    line-height: 1.25;
+}
+
+#packages .payment-ways .action {
+    margin: 80px 0 0;
+}
+
+#packages .payment-ways .action a {
+    width: 300px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+#packages .payment-ways .contact-us-modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--modal-background-color);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+#packages .payment-ways .contact-us-modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 2.5rem;
+    width: 50%;
+    border-radius: 0.5rem;
+}
+
+#packages .payment-ways .close-button {
+    position: absolute;
+    font-size: 3rem;
+    cursor: pointer;
+    top: 0;
+    right: 18px;
+    transition: transform .3s;
+    color: var(--dark-header-text-color);
+}
+
+#packages .payment-ways .close-button:hover {
+    transform: scale(1.1);
+}
+
+#packages .payment-ways .show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+    z-index: 3;
+}
+
+#packages .payment-ways form {
+
+}
+
+#packages .payment-ways .form-group {
+    margin-bottom: 1rem;
+}
+
+#packages .payment-ways .form-group label {
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+
+
+#packages .payment-ways .form-group .form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    color: var(--dark-header-text-color);
+    font-size: var(--button-font-size);
+    font-weight: var(--def-font-weight);
+    font-family: var(--content-font);
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    box-sizing: border-box;
+}
+
+#packages .payment-ways .submit-button {
+    color: var(--button-text-color);
+    background-color: var(--button-background-color);
+    border-color: var(--button-background-color);
+    padding: 0.5rem 2rem;
+    font-size: var(--button-font-size);
+    text-decoration: none;
+    text-align: center;
+    border-width: 0.2rem;
+    border-style: solid;
+    border-radius: 0.35rem;
+    cursor: pointer;
+}
 
 #testimonials
 {

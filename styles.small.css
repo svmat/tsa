@@ -210,6 +210,57 @@ a.button
     border-left-color: var(--border-color);
 }
 
+#packages .payment-ways h4 {
+    width: 80%;
+}
+
+#packages .payment-ways p {
+    width: 80%;
+    font-size: 160%;
+}
+
+#packages .payment-ways .point {
+    width: 25%;
+}
+
+@media all and (max-width: 668px) {
+    #packages .payment-ways h4 {
+        width: 90%;
+        font-size: 160%;
+    }
+    #packages .payment-ways p {
+        width: 90%;
+        font-size: 150%;
+    }
+
+    #packages .payment-ways .bullet-points {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #packages .payment-ways .point {
+        width: 70%;
+        margin: 20px 40px 40px;
+    }
+}
+
+@media all and (max-width: 400px) {
+    #packages .payment-ways h4 {
+        font-size: 140%;
+    }
+    #packages .payment-ways p {
+        font-size: 130%;
+    }
+
+    #packages .payment-ways .point {
+        width: 80%;
+    }
+
+    #packages .payment-ways .point img {
+        width: 100px;
+    }
+}
+
 
 #testimonials .wheel
 {

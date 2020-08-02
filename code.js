@@ -266,6 +266,28 @@ function initCountdown (finishDate) {
     }, second)
 }
 
+function initContactUsModal () {
+    const modal = document.querySelector("#main #packages .payment-ways .contact-us-modal");
+    const trigger = document.querySelector("#main #packages .payment-ways .contact-us-trigger");
+    const closeButton = document.querySelector("#main #packages .payment-ways .close-button");
+
+    console.log(modal, trigger)
+
+    function toggleModal() {
+        modal.classList.toggle("show-modal");
+    }
+
+    function windowOnClick(event) {
+        if (event.target === modal) {
+            toggleModal();
+        }
+    }
+
+    trigger.addEventListener("click", toggleModal);
+    closeButton.addEventListener("click", toggleModal);
+    window.addEventListener("click", windowOnClick);
+}
+
 function initPage ()
 {
     whoweare_profiles = document.querySelectorAll("#whoweare .body .profile");
@@ -281,6 +303,8 @@ function initPage ()
     initWheel(testimonials_wheel, "#testimonials .wheel .content .statement");
     updatePage();
     //showBanner();
+
+    initContactUsModal();
 
     /* Here you can initialize Countdown timer. Just pass a valid date. */
     initCountdown('Jul 12, 2020 17:00:00');
