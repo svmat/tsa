@@ -97,9 +97,9 @@ a.button
     background-color: var(--button-background-color);
     border-color:     var(--button-background-color);
 
-    padding: 0.8rem;
+    padding: 1rem;
 
-    font-size:       var(--button-font-size);
+    font-size:       var(--navbar-font-size);
     text-decoration: none;
     text-align:      center;
 
@@ -108,6 +108,7 @@ a.button
     border-radius: 0.35rem;
 
     display: block;
+    margin-top: 2rem;
 }
 
 a.button:hover
@@ -3040,15 +3041,6 @@ h2
 /*-------------- END LANDING PAGE ----------------*/
 /*------------------------------------------------*/
 
-.countdown-container {
-    display: none;
-    position: absolute;
-    bottom: 10%;
-}
-
-#pitch .countdown-container {
-    top: -170px;
-}
 
 .countdown-container h3 {
     color: var(--dark-header-text-color);

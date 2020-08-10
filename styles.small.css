@@ -602,9 +602,9 @@ a.button
 
 @media all and (max-width: 440px) {
 
-    /*.countdown-container {*/
-    /*    margin-top: 100px;*/
-    /*}*/
+    .countdown-container {
+        margin-top: 6.3rem;
+    }
 
     .countdown-container h2 {
         margin: 24px 24px 12px;

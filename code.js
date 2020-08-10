@@ -307,7 +307,7 @@ function initPage ()
     initContactUsModal();
 
     /* Here you can initialize Countdown timer. Just pass a valid date. */
-    initCountdown('Jul 12, 2020 17:00:00');
+    initCountdown('Sep 13, 2020 00:00:00');
 }
 
 
