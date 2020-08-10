@@ -1274,6 +1274,12 @@ h2
     cursor: pointer;
 }
 
+#packages .payment-ways .line_sep
+{
+    width: 10rem;
+    border-bottom-width: 0.15rem;
+}
+
 #testimonials
 {
     position: relative;
@@ -1709,6 +1715,7 @@ h2
     height: 2.0rem;
 }
 
+.payment_ways
 
 #banner .content
 {
