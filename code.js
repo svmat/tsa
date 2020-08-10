@@ -269,7 +269,6 @@ function initCountdown (finishDate) {
 function initContactUsModal () {
     const modal = document.querySelector("#main #packages .payment-ways .contact-us-modal");
     const trigger = document.querySelector("#main #packages .payment-ways .contact-us-trigger");
-    const closeButton = document.querySelector("#main #packages .payment-ways .close-button");
 
     console.log(modal, trigger)
 
@@ -284,7 +283,6 @@ function initContactUsModal () {
     }
 
     trigger.addEventListener("click", toggleModal);
-    closeButton.addEventListener("click", toggleModal);
     window.addEventListener("click", windowOnClick);
 }
 
@@ -308,7 +306,18 @@ function initPage ()
 
     /* Here you can initialize Countdown timer. Just pass a valid date. */
     initCountdown('Sep 13, 2020 00:00:00');
+
+    initChatWidget();
 }
 
+function initChatWidget () {
+    const chatWidgetBtn = document.querySelector('.chat_widget .pulse-button');
+    const chatWidgetActions = document.querySelector('.chat_widget .actions');
+
+    chatWidgetBtn.addEventListener('click', () => {
+        console.log('toggling', chatWidgetActions.classList)
+        chatWidgetActions.classList.toggle('open')
+    })
+}
 
 window.onload = initPage;

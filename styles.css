@@ -3173,3 +3173,133 @@ h2
 {
     filter: grayscale(0%);
 }
+
+/*------------------------------------------------------*/
+/*---------------- CHAT WIDGET -------------------------*/
+/*------------------------------------------------------*/
+
+.chat_widget {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 99999;
+}
+
+.chat_widget .pulse-button {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: -50px;
+    display: block;
+    width: 64px;
+    height: 64px;
+    font-size: 1.3em;
+    font-family: 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 100px;
+    letter-spacing: -1px;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    background-color: #ff6464;
+    cursor: pointer;
+    box-shadow: 0 0 0 0 rgba(255, 148, 148, 0.5);
+    -webkit-animation: pulse 3s infinite;
+    background-image: url('media/chat_icon.svg');
+    background-position: center center;
+    background-size: 35px 35px;
+    background-repeat: no-repeat;
+}
+
+.chat_widget .actions {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 140px;
+    position: absolute;
+    bottom: 0;
+    right: 75px;
+}
+
+.chat_widget .actions.open {
+    display: flex;
+}
+
+.chat_widget .actions .round-button {
+    height: 40px;
+    width: 40px;
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
+    border-radius: 50%;
+    display: flex;
+    transition: transform .4s;
+    cursor: pointer;
+    animation: appear 0.2s ease-in;
+}
+
+.chat_widget .actions .round-button:hover {
+    transform: scale(1.1);
+}
+
+.chat_widget .actions .mail-button {
+    display: inline-block;
+    background-image: url('media/mail_icon.svg');
+    background-position: center center;
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    background-color: #c62828;
+    height: 100%;
+    width: 100%;
+}
+
+.chat_widget .actions .instagram-button {
+    display: inline-block;
+    background-image: url('media/instagram_circle_icon.png');
+    background-position: center center;
+    background-size: 44px 44px;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+.chat_widget .actions .telegram-button {
+    display: inline-block;
+    background-image: url('media/telegram_icon.png');
+    background-position: center center;
+    background-size: 44px 44px;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        @include transform(scale(.8));
+    }
+
+    70% {
+        @include transform(scale(1));
+        box-shadow: 0 0 0 8px rgba(255, 148, 148, 0.75);
+    }
+
+    100% {
+        @include transform(scale(.8));
+        box-shadow: 0 0 0 0 rgba(255, 148, 148, 0.75);
+    }
+}
+
+/*------------------------------------------------------*/
+/*--------------- END CHAT WIDGET ----------------------*/
+/*------------------------------------------------------*/
