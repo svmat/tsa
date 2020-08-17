@@ -2930,6 +2930,19 @@ h2
     margin-top: 5rem;
 }
 
+#landing .getstarted-special p {
+    margin-top: 4rem;
+    padding: 0;
+    color: #ffffff;
+    font-family: var(--standout-font);
+    font-size: 120%;
+    font-weight: 500;
+}
+
+#landing .getstarted-special a {
+    margin-top: 1rem !important;
+}
+
 #landing #register-form .wrapper {
     width: 80%;
     margin: 0 auto;
