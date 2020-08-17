@@ -31,7 +31,7 @@
           type="text/css"
           href="https://fonts.googleapis.com/css?family=Raleway&display=block">
 
-    <title>IT Career in 4 weeks - Free Webinar!</title>
+    <title>Marathon</title>
 
     <meta name="keywords"
           content="QA,Quality Assurance,tester,online course,QA analyst,Software quality assurance,QA course for beginners,QA courses,school,bootcamp,hacker school,Chicago">
@@ -57,7 +57,7 @@
 </head>
 
 
-<body id="landing" class="vars_colors vars_fonts vars_measurements">
+<body id="marathon" class="vars_colors vars_fonts vars_measurements">
 
     <div id="intro">
         <div id="navbar">
@@ -95,10 +95,10 @@
                 <div onclick="return hideMenuLinks();" class="close"></div>
 
                 <div class="container">
-<!--                    <a onclick="return hideMenuLinks();"-->
-<!--                       href="/webinar">-->
-<!--                        Webinar-->
-<!--                    </a>-->
+                    <!--                    <a onclick="return hideMenuLinks();"-->
+                    <!--                       href="/webinar">-->
+                    <!--                        Webinar-->
+                    <!--                    </a>-->
                     <a onclick="return hideMenuLinks();"
                        href="/webinar_copy">
                         Webinar
@@ -146,51 +146,50 @@
 
             <div id="intro_box" class="box item">
                 <h1>
-                    Still dreaming about a successful career with a high paying job?
+                    Thinking about changing your career and landing a job in the IT field?
                 </h1>
 
                 <p>
-                    We can help getting into IT with NO experience!
+                    Register below!
                 </p>
 
-                <a class="button trigger-modal1">Register for Live Webinar</a>
+                <p>
+                    The number of attendees is limited
+                </p>
+
+                <a class="button trigger-modal1">Register for a Free Workshop</a>
             </div>
         </div>
     </div>
 
-    <div class="second-page">
-        <p>You probably know that most high demand jobs  require <strong style="font-size: 105%;">y-y-y-years of education</strong>. Not all of us have time or money for that.</p>
-
-        <p>We can help getting into IT with <strong style="font-size: 105%;">NO experience!</strong></p>
-
-        <p>We went through the same period in our lives. Despite that, we were able to change it. Today we have the ability to travel the world, spend more time with friends and family and enjoy our hobbies!</p>
-
-        <p>Sign up for our next <strong><span style="color: #d32f2f">FREE webinar</span></strong> to hear  where we share our top  secrets of getting into the IT industry. The tips and tricks shared in the webinar will  be valuable no matter what type of background you currently have. </p>
+    <div class="additional-text">
+        <h4>
+            Don’t lose the opportunity to participate in our intense workshop where you will learn what are the responsibilities of Quality Assurance Analysts by doing testing yourself.
+        </h4>
     </div>
 
-<!--    <div class="third-page">-->
-<!--        <div class="overlay">-->
-<!--            <h2>You don't want to miss this!</h2>-->
+    <div class="second-page">
+        <p>There will be no lectures, instead we will play games and  practice.</p>
 
-<!--            <h2>See you there! </h2>-->
+        <p>Within <strong>3</strong> days you will get hands-on experience in tracking, analyzing and reporting <strong>DEFECTS</strong>.</p>
 
-<!--            <a class="button trigger-modal2">Register for a Free Webinar</a>-->
-<!--        </div>-->
-<!--    </div>-->
+        <p> In addition, as in the <strong>REAL</strong> world all your found <strong>DEFECTS</strong> can earn you <strong>$$$</strong>!!!</p>
 
-    <div id="getstarted" class="getstarted-special">
+        <p>
+            So don’t miss the opportunity!
+            Attend our <strong><span style="color: #d32f2f">FREE workshop</span></strong>, learn IT and get <strong>$$$</strong>!
+        </p>
+    </div>
+
+    <div id="getstarted">
         <div class="overlay">
             <h1>
                 You don't want to miss this!
             </h1>
 
-            <h1>See you there! </h1>
+            <h1>See you there!</h1>
 
-            <p>
-                Sunday, August 23rd, 11:00 AM CST
-            </p>
-
-            <a class="button trigger-modal2">Register for a Free Webinar</a>
+            <a class="button trigger-modal2">Register for a Free Workshop</a>
         </div>
     </div>
 
@@ -202,7 +201,7 @@
                 <div class="simulation-modal-content">
                     <span class="close-button">×</span>
 
-                    <h3>Registration for a Free Webinar</h3>
+                    <h3>Registration for a Free Workshop</h3>
 
                     <form action="https://www.aweber.com/scripts/addlead.pl" method="post">
                         <input type="hidden" name="meta_web_form_id" value="271145318" />
@@ -286,10 +285,10 @@
         }
 
         function initRequestSimulationModal () {
-            const modal = document.querySelector("#landing #register-form .simulation-modal");
-            const trigger1 = document.querySelector("#landing .trigger-modal1");
-            const trigger2 = document.querySelector("#landing .trigger-modal2");
-            const closeButton = document.querySelector("#landing #register-form .close-button");
+            const modal = document.querySelector("#marathon #register-form .simulation-modal");
+            const trigger1 = document.querySelector("#marathon .trigger-modal1");
+            const trigger2 = document.querySelector("#marathon .trigger-modal2");
+            const closeButton = document.querySelector("#marathon #register-form .close-button");
 
             function toggleModal() {
                 modal.classList.toggle("show-modal");
@@ -309,7 +308,7 @@
             updatePage()
         }
 
-        const landing_points = document.querySelectorAll("#landing .second-page p");
+        const landing_points = document.querySelectorAll("#marathon .second-page p");
 
         function updatePage() {
             for(let i = 0; i < landing_points.length; i++)
