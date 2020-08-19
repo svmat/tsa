@@ -2930,6 +2930,19 @@ h2
     margin-top: 5rem;
 }
 
+#landing .getstarted-special p {
+    margin-top: 4rem;
+    padding: 0;
+    color: #ffffff;
+    font-family: var(--standout-font);
+    font-size: 120%;
+    font-weight: 500;
+}
+
+#landing .getstarted-special a {
+    margin-top: 1rem !important;
+}
+
 #landing #register-form .wrapper {
     width: 80%;
     margin: 0 auto;
@@ -3303,3 +3316,267 @@ h2
 /*------------------------------------------------------*/
 /*--------------- END CHAT WIDGET ----------------------*/
 /*------------------------------------------------------*/
+
+
+/*---------------------------------------------------*/
+/*------------ START MARATHON PAGE -----------------*/
+/*-------------------------------------------------*/
+
+#marathon {
+    min-width: 320px;
+    scroll-behavior: smooth;
+}
+
+#marathon #intro {
+    background-image: url("media/landing_head_banner_sm.jpg");
+    height: 65rem;
+}
+
+#marathon #intro .layer h1 {
+    width: 70%;
+    white-space: unset;
+    margin-bottom: 2rem;
+}
+
+#marathon #intro .layer a {
+    width: 17rem;
+}
+
+#marathon #intro #intro_box p {
+    width: 55%;
+    margin: 1rem 0;
+    padding: 0;
+}
+
+#marathon #intro_box {
+    top: 18%;
+}
+
+#marathon #intro_box span {
+    display: inline-block;
+    margin: 1rem;
+    color: var(--intro-text-color);
+    font-family: var(--standout-font);
+    font-size: 110%;
+}
+
+#marathon #intro_box .button {
+    cursor: pointer;
+}
+
+#marathon .additional-text {
+    margin: 70px 0 20px;
+}
+
+#marathon .additional-text h4 {
+    width: 70%;
+    margin: 0 auto;
+    color: var(--dark-header-text-color);
+    text-align: center;
+    font-family: var(--standout-font);
+    font-size: 220%;
+    font-weight: var(--header-font-weight);
+    line-height: 1.5;
+}
+
+#marathon .second-page {
+    padding: 120px 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ECE9E6;
+    background: -webkit-linear-gradient(to bottom, #FFFFFF, #ECE9E6);
+    background: linear-gradient(to bottom, #FFFFFF, #ECE9E6);
+    position: relative;
+    overflow: hidden;
+}
+
+#marathon .second-page:before {
+    content: '';
+    background-image: url(media/pitch_decoration.svg);
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0.45;
+    position: absolute;
+    width: 20rem;
+    left: 3%;
+    top: 0;
+    height: 30rem;
+}
+
+#marathon .second-page:after {
+    content: '';
+    background-image: url(media/pitch_decoration.svg);
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0.45;
+    position: absolute;
+    width: 20rem;
+    right: 8%;
+    bottom: 0;
+    height: 30rem;
+}
+
+
+#marathon .second-page p {
+    margin: 0 0 24px;
+    width: 60%;
+    line-height: 1.75;
+    color: rgba(10, 10, 10, 0.95);
+    font-size: 140%;
+    font-weight: 500;
+    font-family: var(--content-font);
+}
+
+#marathon .second-page p::first-letter {
+    font-size: 1.55rem;
+    font-weight: 600;
+}
+
+#marathon .second-page p:nth-child(even)
+{
+    margin-left: 200%;
+}
+
+#marathon .second-page p:nth-child(odd)
+{
+    margin-left: -200%;
+}
+
+#marathon .second-page .anim {
+    animation-name:            anim_slidein;
+    animation-fill-mode:       forwards;
+    animation-duration:        2s;
+    animation-iteration-count: 1;
+}
+
+#marathon #getstarted h1 {
+    margin-bottom: 0;
+}
+
+#marathon #getstarted a {
+    width: 17rem;
+    margin-top: 5rem;
+}
+
+#marathon #register-form .wrapper {
+    width: 80%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+#marathon #register-form h2 {
+    color: var(--darken-gray);
+    font-family: var(--standout-font);
+    font-size: var(--intro-header-font-size);
+    font-weight: var(--header-font-weight);
+    position: relative;
+    padding: 1rem 0;
+    margin: 0 0 60px;
+    text-align: center;
+}
+
+#marathon #register-form a {
+    cursor: pointer;
+    width: 230px;
+    margin: 0 auto;
+}
+
+#marathon #register-form .simulation-modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--modal-background-color);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+#marathon #register-form .simulation-modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 2.5rem;
+    width: 50%;
+    border-radius: 0.5rem;
+}
+
+#marathon #register-form .close-button {
+    position: absolute;
+    font-size: 3rem;
+    cursor: pointer;
+    top: 0;
+    right: 18px;
+    transition: transform .3s;
+    color: var(--dark-header-text-color);
+}
+
+#marathon #register-form .close-button:hover {
+    transform: scale(1.1);
+}
+
+#marathon #register-form .show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+    z-index: 3;
+}
+
+#marathon #register-form form {
+
+}
+
+#marathon #register-form .form-group {
+    margin-bottom: 1rem;
+}
+
+#marathon #register-form .form-group label {
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+
+
+#marathon #register-form .form-group .form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    color: var(--dark-header-text-color);
+    font-size: var(--button-font-size);
+    font-weight: var(--def-font-weight);
+    font-family: var(--content-font);
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    box-sizing: border-box;
+}
+
+#marathon #register-form .submit-button {
+    color: var(--button-text-color);
+    background-color: var(--button-background-color);
+    border-color: var(--button-background-color);
+    padding: 0.5rem 2rem;
+    font-size: var(--button-font-size);
+    text-decoration: none;
+    text-align: center;
+    border-width: 0.2rem;
+    border-style: solid;
+    border-radius: 0.35rem;
+    cursor: pointer;
+}
+
+/*--------------------------------------------------*/
+/*-------------- END MARATHON PAGE ----------------*/
+/*------------------------------------------------*/
+
