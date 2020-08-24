@@ -3187,6 +3187,17 @@ h2
     filter: grayscale(0%);
 }
 
+#landing #getstarted .countdown-container
+{
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+#landing #getstarted h2
+{
+    color: var(--light-header-text-color);
+}
+
 /*------------------------------------------------------*/
 /*---------------- CHAT WIDGET -------------------------*/
 /*------------------------------------------------------*/

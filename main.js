@@ -37,28 +37,6 @@ function hideBanner ()
     return true;
 }
 
-function showMenuLinks ()
-{
-    var open_e  = document.getElementById("menu_open");
-    var links_e = document.getElementById("menu_links");
-
-    open_e.style.display  = "none";
-    links_e.style.display = "flex";
-
-    return true;
-}
-
-function hideMenuLinks ()
-{
-    var open_e  = document.getElementById("menu_open");
-    var links_e = document.getElementById("menu_links");
-
-    open_e.style.display  = "flex";
-    links_e.style.display = "none";
-
-    return true;
-}
-
 function removeWheelAttrs (e)
 {
     e.classList.remove("anim_in");

@@ -8,20 +8,20 @@
     <meta name="language" content="en">
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
 
-    <link rel="stylesheet" type="text/css" href="../../vars.css">
+    <link rel="stylesheet" type="text/css" href="../vars.css">
     <link rel="stylesheet"
           type="text/css"
-          href="../../vars.small.css"
+          href="../vars.small.css"
           media="screen and (max-width: 1024px)">
 
-    <link rel="stylesheet" type="text/css" href="../../styles.css">
+    <link rel="stylesheet" type="text/css" href="../styles.css">
     <link rel="stylesheet"
           type="text/css"
-          href="../../styles.small.css"
+          href="../styles.small.css"
           media="screen and (max-width: 1024px)">
     <link rel="stylesheet"
           type="text/css"
-          href="../../styles.huge.css"
+          href="../styles.huge.css"
           media="screen and (min-width: 2160px)">
 
     <link rel="stylesheet"
@@ -41,7 +41,8 @@
                    Learn why IT career is the right choice for your future and enroll
                    today!">
 
-    <script type="text/javascript" src="../../code.js"></script>
+    <script type="text/javascript" src="../common.js"></script>
+    <script type="text/javascript" src="code.js"></script>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160012508-1">
     </script>
@@ -153,6 +154,8 @@
                     We can help getting into IT with NO experience!
                 </p>
 
+                <p>Webinar: August 23rd, 11:00 AM (CST)</p>
+
                 <a class="button trigger-modal1">Register for Live Webinar</a>
             </div>
         </div>
@@ -181,14 +184,19 @@
     <div id="getstarted" class="getstarted-special">
         <div class="overlay">
             <h1>
-                You don't want to miss this!
+                See you there!
             </h1>
 
-            <h1>See you there! </h1>
+            <h2>Countdown: </h2>
 
-            <p>
-                Sunday, August 23rd, 11:00 AM CST
-            </p>
+            <div class="countdown-container">
+                    <ul>
+                        <li><span id="countdown-days"></span>Days</li>
+                        <li><span id="countdown-hours"></span>Hours</li>
+                        <li><span id="countdown-minutes"></span>Minutes</li>
+                        <li><span id="countdown-seconds"></span>Seconds</li>
+                    </ul>
+                </div>
 
             <a class="button trigger-modal2">Register for a Free Webinar</a>
         </div>
@@ -205,30 +213,32 @@
                     <h3>Registration for a Free Webinar</h3>
 
                     <form action="https://www.aweber.com/scripts/addlead.pl" method="post">
-                        <input type="hidden" name="meta_web_form_id" value="271145318" />
+                    <div style="display: none;">
+                        <input type="hidden" name="meta_web_form_id" value="1482476590" />
                         <input type="hidden" name="meta_split_id" value="" />
-                        <input type="hidden" name="listname" value="awlist5650686" />
-                        <input type="hidden" name="redirect" value="https://techskillacademy.net/webinar_thank_you" id="redirect_be3ec4879bdb92b7b56601a04d3869ca" />
-                        <input type="hidden" name="meta_redirect_onlist" value="https://techskillacademy.net/webinar_thank_you" />
+                        <input type="hidden" name="listname" value="awlist5638934" />
+                        <input type="hidden" name="redirect" value="https://techskillacademy.net/webinar_thank_you/" id="redirect_76c83f2aea21b751b9d0aa5e9241166b" />
+                        <input type="hidden" name="meta_redirect_onlist" value="https://techskillacademy.net/webinar_thank_you/" />
                         <input type="hidden" name="meta_adtracking" value="My_Web_Form" />
                         <input type="hidden" name="meta_message" value="1" />
                         <input type="hidden" name="meta_required" value="name,email" />
+                    </div>
 
                         <input type="hidden" name="meta_tooltip" value="" />
                         <div class="form-group">
-                            <label for="firstName">Name</label>
-                            <input id="awf_field-107564148" type="text" class="text form-control" name="name (awf_first)" value=""  onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " tabindex="500" placeholder="Enter full name" required>
+                            <label for="awf_field-108228227">Full Name:</label>
+                            <input id="awf_field-108228227" type="text" class="text form-control" name="name (awf_first)" value=""  onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " tabindex="500" placeholder="Enter full name" required>
                         </div>
 
                         <div class="form-group">
-                            <label for="email">Email address</label>
-                            <input class="text  form-control" id="awf_field-107564149" type="text" name="email" value="" tabindex="502" onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';}" placeholder="Enter email" required>
+                            <label for="awf_field-108228228">Email:</label>
+                            <input class="text  form-control" id="awf_field-108228228" type="text" name="email" value="" tabindex="502" onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';}" placeholder="Enter email" required>
                         </div>
 
 
                         <div class="form-group">
-                            <label for="comments">Phone Number (optional)</label>
-                            <input type="text" id="awf_field-107564150" class="text form-control" name="custom Phone Number" value=""  onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " tabindex="503">
+                            <label for="awf_field-108228229">Phone Number (optional):</label>
+                            <input type="text" id="awf_field-108228229" class="text form-control" name="custom Phone Number" value=""  onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " tabindex="503">
                         </div>
 
                         <button name="submit" type="submit" class="submit-button" tabindex="504">Reserve My Seat</button>
@@ -265,60 +275,18 @@
         </div>
     </div>
 
-    <script>
-        function isVisible (e) {
-            const rect = e.getBoundingClientRect();
+    <div class="chat_widget">
+        <div class="pulse-button"></div>
 
-            if (rect.top >= 0 &&
-                rect.top <= window.innerHeight ||
-                rect.bottom >= 0 &&
-                rect.bottom <= window.innerHeight)
-            {
-                return true;
-            }
+        <div class="actions">
+            <div class="round-button"><a class="instagram-button" target="_blank" href="https://www.instagram.com/techskillacademy"></a></div>
+            <div class="round-button"><a class="telegram-button" target="_blank"  href="https://t.me/joinchat/AAAAAFMlGbxZxlU_5noljA"></a></div>
+            <div class="round-button"><a class="mail-button" href="mailto:info@techskillacademy.net"></a></div>
+        </div>
+    </div>
 
-            return false;
-        }
-
-        function animateOnVisible (e) {
-            if(!e.classList.contains("anim") && isVisible(e))
-                e.classList.add("anim");
-        }
-
-        function initRequestSimulationModal () {
-            const modal = document.querySelector("#landing #register-form .simulation-modal");
-            const trigger1 = document.querySelector("#landing .trigger-modal1");
-            const trigger2 = document.querySelector("#landing .trigger-modal2");
-            const closeButton = document.querySelector("#landing #register-form .close-button");
-
-            function toggleModal() {
-                modal.classList.toggle("show-modal");
-            }
-
-            function windowOnClick(event) {
-                if (event.target === modal) {
-                    toggleModal();
-                }
-            }
-
-            trigger1.addEventListener("click", toggleModal);
-            trigger2.addEventListener("click", toggleModal);
-            closeButton.addEventListener("click", toggleModal);
-            window.addEventListener("click", windowOnClick);
-
-            updatePage()
-        }
-
+    <script type="text/javascript">
         const landing_points = document.querySelectorAll("#landing .second-page p");
-
-        function updatePage() {
-            for(let i = 0; i < landing_points.length; i++)
-                animateOnVisible(landing_points[i]);
-        }
-
-        window.onscroll = updatePage;
-
-        window.onload = initRequestSimulationModal;
     </script>
 
 </body>
