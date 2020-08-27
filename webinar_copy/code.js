@@ -49,7 +49,7 @@ function updatePage() {
 
 function initPage ()
 {
-    initCountdown('Aug 23, 2020 11:00:00');
+    initCountdown('Aug 29, 2020 19:00:00');
 
     initChatWidget();
 
