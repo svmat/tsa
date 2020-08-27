@@ -232,7 +232,7 @@ function initPage ()
 
     initWheel(testimonials_wheel, "#testimonials .wheel .content .statement");
     updatePage();
-    //showBanner();
+    showBanner();
 
     initContactUsModal();
 
