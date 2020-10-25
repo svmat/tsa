@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+  <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+  <meta name="language" content="en">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
+
+  <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+
+  <link rel="stylesheet" type="text/css" href="../../vars.css">
+  <link rel="stylesheet"
+        type="text/css"
+        href="../../vars.small.css"
+        media="screen and (max-width: 1024px)">
+
+  <link rel="stylesheet" type="text/css" href="../../styles.css">
+  <link rel="stylesheet"
+        type="text/css"
+        href="../../styles.small.css"
+        media="screen and (max-width: 1024px)">
+  <link rel="stylesheet"
+        type="text/css"
+        href="../../styles.huge.css"
+        media="screen and (min-width: 2160px)">
+
+  <link rel="stylesheet"
+        type="text/css"
+        href="https://fonts.googleapis.com/css?family=Lato&display=block">
+  <link rel="stylesheet"
+        type="text/css"
+        href="https://fonts.googleapis.com/css?family=Raleway&display=block">
+
+  <title>TechSkillAcademy QA</title>
+
+  <meta name="keywords"
+        content="QA,Quality Assurance,tester,online course,QA analyst,Software quality assurance,QA course for beginners,QA courses,school,bootcamp,hacker school,Chicago">
+  <meta name="geo.placename" content="Chicago">
+  <meta name="description"
+        content="TechSkillAcademy is an online school for QA testing certification.
+                   Learn why a career is the right choice for your future and enroll
+                   today!">
+
+  <script type="text/javascript" src="../../code.js"></script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160012508-1">
+  </script>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-160012508-1');
+    gtag('config', 'AW-694927522');
+  </script>
+
+</head>
+
+
+<body id="test_automation" class="vars_colors vars_fonts vars_measurements">
+<div id="intro">
+  <div id="navbar">
+    <div class="entry dropdown">
+      <a href="#" aria-haspopup="true">Courses</a>
+
+      <ul class="dropdown-menu" aria-label="submenu">
+        <li><a href="/">QA Course</a></li>
+        <li><a href="/test_automation">Test Automation</a></li>
+      </ul>
+    </div>
+
+    <div class="entry dropdown">
+      <a href="#" aria-haspopup="true">Coaching</a>
+
+      <ul class="dropdown-menu" aria-label="submenu">
+        <li><a href="/interview">Interview simulator</a></li>
+        <li><a href="/coaching">1-on-1 Tutoring</a></li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <!--                <a href="/webinar">Webinar</a>-->
+      <a href="/webinar_copy">Webinar</a>
+    </div>
+
+<!--    <div class="entry">-->
+<!--      <a onclick="return smoothScroll('packages');" href="https://techskillacademy.net/#packages">Packages</a>-->
+<!--    </div>-->
+
+    <div class="entry">
+      <a href="https://m.me/techskillacademyhelp">Contact</a>
+    </div>
+
+    <div class="entry">
+      <a href="https://techskillacademy.thinkific.com/users/sign_in">Login</a>
+    </div>
+  </div>
+
+  <div id="menu">
+    <div id="menu_open"  onclick="return showMenuLinks();" class="open"></div>
+
+    <div id="menu_links" class="links">
+      <div onclick="return hideMenuLinks();" class="close"></div>
+
+      <div class="container">
+        <div class="accordion">
+          <div class="accordion-menu">
+            <input type="checkbox" name="coaching-accordion-checkbox" id="coaching-accordion-checkbox" />
+            <label for="coaching-accordion-checkbox">Coaching</label>
+
+            <div class="coaching-accordion-content">
+              <a onclick="return hideMenuLinks();" href="/">QA Course</a>
+              <a onclick="return hideMenuLinks();" href="/test_automation">Test Automation</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion-menu">
+            <input type="checkbox" name="accordion-checkbox" id="accordion-checkbox" />
+            <label for="accordion-checkbox">Coaching</label>
+
+            <div class="accordion-content">
+              <a onclick="return hideMenuLinks();" href="/interview">Interview simulator</a>
+              <a onclick="return hideMenuLinks();" href="/coaching">1-on-1 Tutoring</a>
+            </div>
+          </div>
+        </div>
+
+        <!--                    <a onclick="return hideMenuLinks();"-->
+        <!--                       href="/webinar">-->
+        <!--                        Webinar-->
+        <!--                    </a>-->
+        <a onclick="return hideMenuLinks();"
+           href="/webinar_copy">
+          Webinar
+        </a>
+
+<!--        <a onclick="return hideMenuLinks();"-->
+<!--           href="https://techskillacademy.net/#packages">-->
+<!--          Packages-->
+<!--        </a>-->
+
+        <a onclick="return hideMenuLinks();"
+           href="https://m.me/techskillacademyhelp">
+          Contact
+        </a>
+
+        <a onclick="return hideMenuLinks();"
+           href="https://techskillacademy.thinkific.com/users/sign_in">
+          Login
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="layer">
+    <img id="intro_logo"
+         class="item logo"
+         src="media/intro_logo.png"
+         alt="TechSkillAcademy">
+    <img class="shaping" alt="" src="media/intro_shaping.svg">
+
+    <div id="intro_box" class="box item">
+      <h1>
+        Start making 50$/h in IT with Test Automation
+      </h1>
+
+      <p>
+        With our program you can get in IT without coding experience!
+      </p>
+
+      <a class="button" href="/">
+        Start Free Week
+      </a>
+    </div>
+  </div>
+</div>
+
+<div id="pitch">
+  <img id="pitch_decoration"
+       class="decoration"
+       alt="Find your way"
+       src="../../media/pitch_decoration.svg">
+
+  <h1>
+    Do these situations sound familiar to you?
+  </h1>
+  <div class="line_sep"></div>
+
+  <div class="questions">
+    <ul>
+      <li>You are not satisfied with your salary or flexibility</li>
+      <li>Bored from working on the same project again and again</li>
+      <li>Feel like you've reached a plateau in your career</li>
+      <li>Not reaching your full potential at your job</li>
+      <li>Dissatisfied with the benefits your company provides</li>
+    </ul>
+  </div>
+
+  <p>
+    If this sounds familiar, don't worry - <b>you're not alone</b>. We went through the same
+    period in our lives. With a little effort, however, we were able to change it and now
+    our purpose is to help you to live a better life! We created this course to get you from
+    where you are now to where you want to be in the future, doing work that pays what
+    you deserve.
+  </p>
+</div>
+
+<div id="seewhy">
+  <h1>
+    See why TechSkillAcademy
+  </h1>
+  <div class="line_sep"></div>
+
+  <div class="video">
+    <iframe src="https://www.youtube.com/embed/bbONUhSpgcY" allowfullscreen>
+    </iframe>
+  </div>
+</div>
+
+<div id="highlights">
+  <h1>
+    QA testing program that will land you a job
+  </h1>
+  <div class="line_sep"></div>
+
+  <div class="group">
+    <div class="item">
+      <img alt="Online classes" src="../../media/highlights_online.svg">
+      <h2>
+        Online classes
+      </h2>
+      <p>
+        Two months of rigorous online classes instructed by the industry's best QA Leads
+      </p>
+    </div>
+    <div class="item">
+      <img alt="Real experience" src="../../media/highlights_experience.svg">
+      <h2>
+        Real experience
+      </h2>
+      <p>
+        We provide the tools to practice that are currently used by top companies
+        (Jira, PostMan, Selenium, etc.)
+      </p>
+    </div>
+    <div class="item">
+      <img alt="Job search skills" src="../../media/highlights_interview.svg">
+      <h2>
+        Job search skills
+      </h2>
+      <p>
+        Our career counsel will help you find the best company that will fit your goals
+        and interests. We also provide 1-on-1 interview coaching and individual
+        resum&#233; preparation
+      </p>
+    </div>
+    <div class="item">
+      <img alt="1-on-1 support" src="../../media/highlights_coaching.svg">
+      <h2>
+        1-on-1 Support
+      </h2>
+      <p>
+        Get 1-on-1 support and coaching from QA leads in various IT industries
+      </p>
+    </div>
+  </div>
+</div>
+
+<div id="experience">
+  <div class="desk">
+    <div id="experience_details" class="details">
+      <h2>
+        Get an efficient learning experience
+      </h2>
+
+      <ul>
+        <li class="experience-item">
+          Set the schedule that works for you
+        </li>
+        <li class="experience-item">
+          Get regular feedback on your progress
+        </li>
+        <li class="experience-item">
+          Use of all provided resources: including videos, worksheets and templates
+        </li>
+        <li class="experience-item">
+          Stay in touch with other students and your coach
+        </li>
+        <li class="experience-item">
+          Participate in live sessions to answer all your questions
+        </li>
+        <li class="experience-item">
+          Flexible financing and diverse payment options available
+        </li>
+        <li>
+          Internship
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div id="whoweare">
+  <div>
+    <h1>
+      Who we are
+    </h1>
+    <div class="line_sep"></div>
+  </div>
+
+  <div class="body">
+    <div class="profile">
+      <img alt="Svetlana Matchenia" src="../../media/whoweare_sveta.jpg">
+      <div class="desc">
+        <h2>
+          Svetlana Matchenia
+        </h2>
+        <p>
+          My career in QA began as a manual tester at a trading firm. Working in QA
+          made me passionate about technology, so I decided to develop my skills by
+          taking more courses. I worked my way up to Team Lead and Web Testing
+          Framework Architect on the Test Automation team. I continued my growth and
+          earned a Master's in Computer Science from DePaul University. Today I work
+          as a Software Engineer for a high frequency trading firm.
+        </p>
+      </div>
+    </div>
+
+    <div class="profile">
+      <img alt="Yuliia Khyzhniak" src="../../media/whoweare_iuliia.jpg">
+      <div class="desc">
+        <h2>
+          Yuliia Khyzhniak
+        </h2>
+        <p>
+          Although I have a bachelor's in finance, IT has recently become my
+          passion. After completing an MBA in Information Technology, I realized that
+          IT is my future. I now have over 10 years of experience working in IT and
+          have held various roles, including business analyst and project manager. I'm
+          looking forward to sharing my knowledge and experience with you.
+        </p>
+      </div>
+    </div>
+
+    <div class="profile">
+      <img alt="Anastasiya Motalava" src="../../media/whoweare_anastasiya.jpg">
+      <div class="desc">
+        <h2>
+          Anastasiya Motalava
+        </h2>
+        <p>
+          I started my journey in IT back in 2012. In Belarus I earned a degree in
+          economics, however, in the USA I realized that IT is the field with the most
+          promising future and holds a lot of opportunities. After completing a three
+          month course, I became a manual QA Analyst. Later I earned my Bachelor's in
+          Computer Science. Throughout my career I have had the chance to work on
+          different projects and gain significant experience. Now I am an experienced
+          QA instructor.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="cur">
+  <div class="desk">
+    <div id="cur_details" class="details">
+      <h2>
+        Curriculum Highlights
+      </h2>
+
+      <ul>
+        <li>
+          Fundamentals of QA job responsibilities
+        </li>
+        <li>
+          Software development life cycle, including agile and waterfall methodologies
+        </li>
+        <li>
+          Test design, types of testing, and documentation
+        </li>
+        <li>
+          Bug reporting with JIRA
+        </li>
+        <li>
+          Versioning and version control system GIT
+        </li>
+        <li>
+          Project environments (dev, qa, staging, production)
+        </li>
+        <li>
+          Web application testing
+        </li>
+        <li>
+          Mobile application testing
+        </li>
+        <li>
+          Test automation with Selenium WebDriver and Python
+        </li>
+        <li>
+          API testing with Postman
+        </li>
+        <li>
+          Database testing with SQL
+        </li>
+        <li>
+          Resum&#233; preparation
+        </li>
+        <li>
+          Job market analysis and job hunting
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div id="packages">
+  <div>
+    <h1>
+      Packages
+    </h1>
+    <div class="line_sep"></div>
+  </div>
+</div>
+
+<div id="testimonials">
+  <div>
+    <h1>
+      Testimonials
+    </h1>
+    <div class="line_sep"></div>
+  </div>
+
+  <div class="wheel">
+    <div class="scroll"
+         onclick="return changeWheelFocus(testimonials_wheel, -1);">
+      <img src="../../media/arrow_icon.svg" alt="arrow-icon" />
+    </div>
+
+    <div class="content">
+      <div class="statement">
+        <img src="../../media/testimonials_natalya_k.png">
+        <div class="text">
+          <h1>
+            Everything is possible if you have a goal
+          </h1>
+          <p>
+            ...I started my IT career as a manual QA tester right after completing a
+            2.5 month online QA course without any tech background and a bachelor in
+            Russian philology. After I began work as an Automation QA at JPMorgan
+            Chase, I was promoted to a Java Developer role. Everything is possible
+            if you have a goal :)
+            <em>- Natalya Kodaneva</em>
+          </p>
+        </div>
+      </div>
+
+      <div class="statement">
+        <img src="../../media/testimonials_nataliia_s.png">
+        <div class="text">
+          <h1>
+            Starting base pay is really high
+          </h1>
+          <p>
+            ...I choose a QA career because I didn’t need to spend tens of thousands
+            of dollars to get a Computer Science degree. The biggest plus is, of
+            course, the salary.  I don’t know of any other professions that will
+            give you such a great beginning base pay.
+            <em>- Nataliia Smal</em>
+          </p>
+        </div>
+      </div>
+
+      <div class="statement">
+        <img src="../../media/testimonials_natallia_c.png">
+        <div class="text">
+          <h1>
+            This career has changed my life in America
+          </h1>
+          <p>
+            ...As an immigrant it is hard to find a fun and high paying job, but QA
+            meets all these requirements. This job also helps me fulfill both my
+            creative and intellectual potential with endless possibilities of
+            learning and being on top of the latest technology trends.
+            <em>- Natallia Chukhno</em>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll"
+         onclick="return changeWheelFocus(testimonials_wheel, 1);">
+      <img src="../../media/arrow_icon.svg" alt="arrow-icon" />
+    </div>
+  </div>
+</div>
+
+<div id="faq">
+  <div>
+    <h1>
+      FAQs
+    </h1>
+    <div class="line_sep"></div>
+  </div>
+
+  <div class="body">
+    <div class="question"
+         onclick="return toggleCollapse(this, '.answer', 'expand_arrow', 'collapse_arrow');">
+      <div class="header">
+        <div class="expand_arrow"></div>
+        <h2>
+          What will I learn from this course and why should I attend?
+        </h2>
+      </div>
+      <div class="answer">
+        <ul>
+          <li>
+            Advanced software testing concepts
+          </li>
+          <li>
+            Basics of automation and API testing
+          </li>
+          <li>
+            Professional guidance for resum&#233; support and interview preparation
+          </li>
+          <li>
+            How to write testing documentation (e.g. test case, test summary, bug
+            reporting)
+          </li>
+          <li>
+            24x7 access and support from QA instructor team
+          </li>
+          <li>
+            We will give real project assignments after each session based on the
+            subject of the session
+          </li>
+          <li>
+            All lessons will be very focused so that you will get real world
+            experience to take actions
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="question"
+         onclick="return toggleCollapse(this, '.answer', 'expand_arrow', 'collapse_arrow');">
+      <div class="header">
+        <div class="expand_arrow"></div>
+        <h2>
+          How much time does the course take?
+        </h2>
+      </div>
+      <div class="answer">
+        <p>
+          Bootcamp lasts 10 weeks. We accept students on a rolling basis. You can
+          enroll at anytime for any future cohor. For upcoming corhort dates, please
+          check out our <a href="https://techskillacademy.thinkific.com">QA course</a>
+          page
+        </p>
+      </div>
+    </div>
+
+    <div class="question"
+         onclick="return toggleCollapse(this, '.answer', 'expand_arrow', 'collapse_arrow');">
+      <div class="header">
+        <div class="expand_arrow"></div>
+        <h2>
+          Do I need a bachelor's degree?
+        </h2>
+      </div>
+      <div class="answer">
+        <p>
+          A bachelor's degree is <b>not</b> required! If you are a non-IT professional
+          and want to get into an IT QA career then this course is for you. Emerging
+          yourself into a QA bootcamp can offer you a quick and easy way to learn
+          testing with no IT background.
+        </p>
+      </div>
+    </div>
+
+    <div class="question"
+         onclick="return toggleCollapse(this, '.answer', 'expand_arrow', 'collapse_arrow');">
+      <div class="header">
+        <div class="expand_arrow"></div>
+        <h2>
+          Do I need a technical background to start the course?
+        </h2>
+      </div>
+      <div class="answer">
+        <p>
+          Although a technical background is helpful to have, it's not required to
+          start a course.  Our students come from various backgrounds (e.g. finance,
+          social science, art, and business)
+        </p>
+      </div>
+    </div>
+
+    <div class="question"
+         onclick="return toggleCollapse(this, '.answer', 'expand_arrow', 'collapse_arrow');">
+      <div class="header">
+        <div class="expand_arrow"></div>
+        <h2>
+          Who can attend this course?
+        </h2>
+      </div>
+      <div class="answer">
+        <p>
+          If you are a professional in any other field but want to be in IT,
+          TechSkillAcademy QA bootcamp will help you make the career switch smoothly
+          and successfully.<br><br> People with both technical and non-technical
+          background are welcome to enroll for this Quality Assurance training.
+        </p>
+      </div>
+    </div>
+
+    <div class="question"
+         onclick="return toggleCollapse(this, '.answer', 'expand_arrow', 'collapse_arrow');">
+      <div class="header">
+        <div class="expand_arrow"></div>
+        <h2>
+          Will this course be enough to apply for a job?
+        </h2>
+      </div>
+      <div class="answer">
+        <p>
+          Yes, our curriculum is based on the most cutting-edge tools and educational
+          materials in the industry and our classes will prepare you to start an IT
+          career. We will do whatever it takes to get you a job. This includes
+          resum&#233; review, interview preparation, mock interview and connections
+          with top recruiting IT companies. Remember, this program is developed to
+          invest in your success. In addition to the testing skills you'll gain, we've
+          developed a specific career support services to help you make yourself the
+          best candidate for the position you want.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="getstarted">
+  <div class="overlay">
+    <h1>
+      Begin pursuing your dream today
+    </h1>
+    <a class="button" onclick="return smoothScroll('packages');" href="#packages">
+      Sign Up Today
+    </a>
+  </div>
+</div>
+
+<div id="banner" class="modal" onclick="if(event.target == this) hideBanner(); return true;">
+  <div class="content">
+    <div onclick="return hideBanner();" class="close" title="Close"></div>
+    <div class="details">
+      <h2>Join us for a free webinar</h2>
+      <h3>How to start your career in IT without technical background</h3>
+    </div>
+    <img src="../../media/banner_attn.jpg">
+    <a class="button"
+       href="https://techskillacademy.webinarninja.com/live-webinars/401337/register">
+      Reserve My Seat
+    </a>
+  </div>
+</div>
+
+<div id="footer">
+  <div class="left">
+    <div class="content">
+                <span>
+                &copy; 2020 TechSkillAcademy, LLC.
+                </span>
+      <a href="mailto:info@techskillacademy.net">info@techskillacademy.net</a>
+      <!-- a href="pp">
+          Privacy Policy
+      </a -->
+      <!-- a href="pp">
+          Terms of Use
+      </a -->
+    </div>
+  </div>
+  <div class="right">
+    <!-- a href="twitter"
+       title="TechSkillAcademy on Twitter">
+        <img alt="TechSkillAcademy on Twitter" src="media/footer_twitter.svg"/>
+    </a -->
+    <a href="https://www.instagram.com/techskillacademy"
+       title="TechSkillAcademy on Instagram">
+      <img alt="TechSkillAcademy on Instagram" src="../../media/footer_instagram.svg"/>
+    </a>
+    <a href="https://www.facebook.com/techSkillAcademyHelp"
+       title="TechSkillAcademy on Facebook">
+      <img alt="TechSkillAcademy on Facebook" src="../../media/footer_facebook.svg"/>
+    </a>
+    <a href="https://t.me/joinchat/AAAAAFMlGbxZxlU_5noljA"
+       target="_blank"
+       title="TechSkillAcademy on Telegram">
+      <img alt="TechSkillAcademy on Telegram" src="../../media/telegram_icon.png"/>
+    </a>
+  </div>
+</div>
+
+<div class="chat_widget">
+  <div class="pulse-button"></div>
+
+  <div class="actions">
+    <div class="round-button"><a class="instagram-button" target="_blank" href="https://www.instagram.com/techskillacademy"></a></div>
+    <div class="round-button"><a class="telegram-button" target="_blank"  href="https://t.me/joinchat/AAAAAFMlGbxZxlU_5noljA"></a></div>
+    <div class="round-button"><a class="mail-button" href="mailto:info@techskillacademy.net"></a></div>
+  </div>
+</div>
+
+</body>
+
+</html>
