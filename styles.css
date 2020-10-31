@@ -3779,7 +3779,7 @@ h2
     margin: 0 0 40px;
     padding: 80px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
     flex-direction: row;
@@ -3787,16 +3787,17 @@ h2
 }
 
 #test_automation #highlights .curriculum {
-    flex: 1 1 360px;
+    flex: 1 1 420px;
     margin: 0 20px 0 0;
+    max-width: 420px;
 }
 
 #test_automation #highlights .curriculum_highlights {
     background-image: url('media/pushpin_note.png');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-    padding: 80px 30px 60px 20px;
+    background-size: 410px;
+    padding: 120px 30px 80px 20px;
 }
 
 #test_automation #highlights .curriculum_highlights ul {
@@ -3819,8 +3820,9 @@ h2
 }
 
 #test_automation #highlights .you_will {
-    flex: 1 1 360px;
+    flex: 1 1 400px;
     margin: 0 0 0 20px;
+    max-width: 500px;
 }
 
 #test_automation #highlights .you_will ul {
@@ -3831,6 +3833,7 @@ h2
     list-style-type: none;
     font-size: 18px;
     font-weight: var(--emph-font-weight);
+    margin-bottom: 12px;
 }
 
 #test_automation #highlights .you_will ul li:before {
@@ -3839,6 +3842,209 @@ h2
     margin-left: -0.5rem;
     font-size: var(--bullet-font-size);
     vertical-align: middle;
+}
+
+#test_automation #packages {
+    width: 85%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+#test_automation #packages .heading {
+    color: var(--dark-header-text-color);
+    margin: 0.0rem;
+    text-align: center;
+    font-family: var(--standout-font);
+    font-size: var(--header-font-size);
+    font-weight: var(--header-font-weight);
+}
+
+#test_automation #packages .prices {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#test_automation #packages .block {
+    flex: 1 1 270px;
+    margin: 20px;
+    transition: transform .3s;
+    max-width: 400px;
+}
+
+#test_automation #packages .block:hover {
+    transform: scale(1.02);
+}
+
+/*Shared properties*/
+#test_automation #packages .title,
+#test_automation #packages .pt-footer {
+    color: #FEFEFE;
+    margin: 0;
+    padding: 15px;
+    font-family: var(--standout-font);
+    font-size: var(--packages-header-font-size);
+    font-weight: var(--def-font-weight);
+    text-align: center;
+    transition: background .3s;
+}
+
+#test_automation #packages .pt-footer {
+    padding: 0;
+}
+
+#test_automation #packages .pt-footer a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: #FEFEFE;
+}
+
+#test_automation #packages .content{
+    color: #FEFEFE;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+/*arrow creation*/
+#test_automation #packages .content:after,
+#test_automation #packages .content:before,
+#test_automation #packages .pt-footer:before,
+#test_automation #packages .pt-footer:after {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 1px;
+    position: absolute;
+    pointer-events: none;
+}
+
+#test_automation #packages .content:after,
+#test_automation #packages .pt-footer:after {
+    border-color: rgba(136, 183, 213, 0);
+    border-width: 5px;
+    margin-left: -5px;
+}
+
+/*/arrow creation*/
+#test_automation #packages .price {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 0.625rem;
+}
+
+#test_automation #packages .price span {
+    font-size: 3rem;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+#test_automation #packages .price sup {
+    font-size: 1.25rem;
+    position: absolute;
+    top: 18px;
+    left: -14px;
+}
+
+#test_automation #packages .price sub {
+    font-size: 1rem;
+}
+
+#test_automation #packages .hint{
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+#test_automation #packages .features {
+    list-style-type: none;
+    background: #F5F5F5;
+    text-align: left;
+    margin: 0;
+    padding: 16px 32px;
+    color: #9C9C9C;
+}
+
+#test_automation #packages .features li{
+    padding: 12px 0;
+    width: 100%;
+    /*color: var(--dark-header-text-color);*/
+}
+
+#test_automation #packages .features li span{
+    padding-right: 0.4rem;
+}
+
+#test_automation #packages .pt-footer{
+    font-size: 0.95rem;
+    text-transform: capitalize;
+}
+
+/*PERSONAL*/
+#test_automation #packages .journeyman .title{
+    background: #d49f80;
+}
+
+#test_automation #packages .journeyman .content,.journeyman .pt-footer{
+    background: #f9ba94;
+}
+
+#test_automation #packages .journeyman .content:after{
+    border-top-color: #f9ba94;
+}
+
+#test_automation #packages .journeyman .pt-footer:after{
+    border-top-color: #FFFFFF;
+}
+
+#test_automation #packages .journeyman .pt-footer:hover {
+    background: #d49f80;
+}
+
+/*PROFESSIONAL*/
+#test_automation #packages .expert .title{
+    background: #cb666f;
+}
+
+#test_automation #packages .expert .content, .expert .pt-footer{
+    background: #eb7580;
+}
+
+#test_automation #packages .expert .content:after{
+    border-top-color: #eb7580;
+}
+
+#test_automation #packages .expert .pt-footer:after{
+    border-top-color: #FFFFFF;
+}
+
+#test_automation #packages .expert .pt-footer:hover {
+    background: #cb666f;
+}
+
+/*BUSINESS*/
+#test_automation #packages .master .title{
+    background: #a26076;
+}
+
+#test_automation #packages .master .content,.master .pt-footer{
+    background: #bb6d87;
+}
+
+#test_automation #packages .master .content:after{
+    border-top-color: #bb6d87;
+}
+
+#test_automation #packages .master .pt-footer:after {
+    border-top-color: #FFFFFF;
+}
+
+#test_automation #packages .master .pt-footer:hover {
+    background: #a26076;
 }
 
 /*--------------------------------------------------*/
