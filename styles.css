@@ -3593,8 +3593,182 @@ h2
 
 #test_automation #intro {
     background-image: url("media/test_automation_banner.jpg");
-    /*height: 65rem;*/
 }
+
+#test_automation #what_happens {
+    position: relative;
+    overflow: hidden;
+}
+
+#test_automation #what_happens:before {
+    content: '';
+    background-image: url(media/pitch_decoration.svg);
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0.45;
+    position: absolute;
+    width: 15rem;
+    left: 2%;
+    top: 15%;
+    height: 18rem;
+    z-index: -1;
+}
+
+#test_automation #what_happens:after {
+    content: '';
+    background-image: url(media/pitch_decoration.svg);
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0.45;
+    position: absolute;
+    width: 15rem;
+    right: 2%;
+    bottom: 10%;
+    height: 18rem;
+    z-index: -1;
+}
+
+#test_automation #what_happens .wrapper {
+    max-width: 700px;
+    width: 100%;
+    margin: 60px auto 60px;
+    padding: 0 25px;
+    box-sizing: border-box;
+}
+
+#test_automation #what_happens h2 {
+    color: var(--darken-gray);
+    font-family: 'Helvetica', 'sans-serif';
+    font-weight: var(--intro-text-font-weight);
+    font-size: var(--subheader-font-size);
+    margin: 0;
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+
+#test_automation #what_happens h3 {
+    color: var(--darken-gray);
+
+    margin: 0;
+    padding-bottom: 0.3rem;
+
+    font-size:   var(--intro-text-font-size);
+    font-weight: var(--intro-header-font-weight);
+    font-family: var(--content-font);
+    line-height: 30px;
+    text-align: center;
+}
+
+#test_automation #what_happens .underline {
+    border-bottom: 2px solid var(--sep-color);
+}
+
+#test_automation .red-underline {
+    border-bottom: 2px solid var(--sep-color);
+
+    display: inline;
+    line-height: 30px;
+
+    padding: 0.3rem 0 !important;
+}
+
+#test_automation #what_happens p {
+    color: var(--dark-header-text-color);
+    padding: 1rem 0;
+    font-size: var(--navbar-font-size);
+    font-weight: var(--def-font-weight);
+    font-family: var(--content-font);
+    position: relative;
+    margin: 0;
+}
+
+#test_automation #what_happens p strong {
+    color: var(--darken-gray);
+}
+
+#test_automation #what_happens p.arrowed {
+    padding: 5px 0 15px 25px;
+    margin-bottom: 0;
+}
+
+#test_automation #our_benefits p.arrowed.extra-margin {
+    margin-top: 12px;
+}
+
+#test_automation #what_happens p.arrowed:last-child {
+    margin: 0 0 8px;
+}
+
+#test_automation #what_happens p.arrowed:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 8px solid var(--button-background-color);
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+
+#test_automation #what_happens .our_benefits {
+    width: 70%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+#test_automation #what_happens .our_benefits .row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+#test_automation #what_happens .our_benefits .col {
+    flex: 1 1 300px;
+    padding: 0 20px;
+}
+
+#test_automation #what_happens .our_benefits .col h3 + p {
+    margin-top: 15px;
+}
+
+#test_automation #what_happens .our_benefits .col img {
+    box-shadow: 0 8px 17px 2px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.2);
+    width: 100%;
+}
+
+#test_automation #cur .desk {
+    display: grid;
+    place-items: center;
+}
+
+#test_automation #cur .details {
+    position: unset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+#test_automation #cur .details .button {
+    margin-top: 4rem;
+}
+
+#test_automation #cur .details h2 {
+    text-shadow: 1px 2px 8px #000000AA;
+}
+
+#test_automation #cur .details li {
+    text-shadow: 1px 2px 8px #000000AA;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 1rem 0 0;
+}
+
 
 /*--------------------------------------------------*/
 /*---------- END TEST AUTOMATION PAGE -------------*/
