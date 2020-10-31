@@ -3741,6 +3741,10 @@ h2
     width: 100%;
 }
 
+#test_automation #cur {
+    margin-bottom: 0;
+}
+
 #test_automation #cur .desk {
     display: grid;
     place-items: center;
@@ -3769,6 +3773,73 @@ h2
     margin: 1rem 0 0;
 }
 
+
+#test_automation #highlights {
+    background-color: rgba(117, 117, 117, 0.25);
+    margin: 0 0 40px;
+    padding: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+
+#test_automation #highlights .curriculum {
+    flex: 1 1 360px;
+    margin: 0 20px 0 0;
+}
+
+#test_automation #highlights .curriculum_highlights {
+    background-image: url('media/pushpin_note.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 80px 30px 60px 20px;
+}
+
+#test_automation #highlights .curriculum_highlights ul {
+    color: var(--dark-header-text-color);
+    font-size: 18px;
+    font-weight: var(--def-font-weight);
+    font-family: var(--content-font);
+    margin: 0;
+}
+
+#test_automation #highlights .heading {
+    color: var(--darken-gray);
+    margin: 0;
+    padding-bottom: 0.3rem;
+    font-size: var(--intro-text-font-size);
+    font-weight: var(--intro-header-font-weight);
+    font-family: var(--content-font);
+    line-height: 30px;
+    text-align: center;
+}
+
+#test_automation #highlights .you_will {
+    flex: 1 1 360px;
+    margin: 0 0 0 20px;
+}
+
+#test_automation #highlights .you_will ul {
+    list-style: none;
+}
+
+#test_automation #highlights .you_will ul li {
+    list-style-type: none;
+    font-size: 18px;
+    font-weight: var(--emph-font-weight);
+}
+
+#test_automation #highlights .you_will ul li:before {
+    content: '\25B8';
+    color: var(--bullet-color);
+    margin-left: -0.5rem;
+    font-size: var(--bullet-font-size);
+    vertical-align: middle;
+}
 
 /*--------------------------------------------------*/
 /*---------- END TEST AUTOMATION PAGE -------------*/
