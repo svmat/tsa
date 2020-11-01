@@ -3595,6 +3595,29 @@ h2
     background-image: url("media/test_automation_banner.jpg");
 }
 
+#test_automation #intro #intro_box {
+    margin-top: 13rem;
+}
+
+#test_automation #intro .layer a {
+    width: 10rem;
+}
+
+#test_automation #intro .layer p {
+    backdrop-filter: blur(5px) grayscale(0.1) opacity(0.85);
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+#test_automation #intro .layer h1 {
+    backdrop-filter: blur(5px) grayscale(0.1) opacity(0.85);
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
 #test_automation #what_happens {
     position: relative;
     overflow: hidden;
@@ -3606,7 +3629,7 @@ h2
     background-size: 100% 100%;
     background-position: center center;
     background-repeat: no-repeat;
-    opacity: 0.45;
+    opacity: 0.35;
     position: absolute;
     width: 15rem;
     left: 2%;
@@ -3621,7 +3644,7 @@ h2
     background-size: 100% 100%;
     background-position: center center;
     background-repeat: no-repeat;
-    opacity: 0.45;
+    opacity: 0.35;
     position: absolute;
     width: 15rem;
     right: 2%;
@@ -3661,7 +3684,7 @@ h2
     text-align: center;
 }
 
-#test_automation #what_happens .underline {
+#test_automation .underline {
     border-bottom: 2px solid var(--sep-color);
 }
 
@@ -3810,9 +3833,9 @@ h2
 
 #test_automation #highlights .heading {
     color: var(--darken-gray);
-    margin: 0;
+    margin: 0 0 20px;
     padding-bottom: 0.3rem;
-    font-size: var(--intro-text-font-size);
+    font-size: var(--subheader-font-size);
     font-weight: var(--intro-header-font-weight);
     font-family: var(--content-font);
     line-height: 30px;

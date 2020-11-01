@@ -833,3 +833,66 @@ a.button
 /*--------------- END MARATHON PAGE -------------------------------*/
 /*----------------------------------------------------------------*/
 
+
+/*---------------------------------------------------*/
+/*--------- START TEST AUTOMATION PAGE -------------*/
+/*-------------------------------------------------*/
+
+#test_automation #cur .desk {
+    height: 55rem;
+}
+
+@media all and (max-width: 668px) {
+    #test_automation #what_happens .our_benefits {
+        width: 80%;
+    }
+
+}
+
+@media all and (max-width: 620px) {
+    #test_automation #highlights {
+        padding: 50px;
+    }
+
+    #test_automation #highlights .curriculum_highlights ul {
+        font-size: 16px;
+    }
+}
+
+@media all and (max-width: 540px) {
+    #test_automation #highlights {
+        padding: 50px 10px;
+    }
+
+    #test_automation #highlights .curriculum_highlights {
+        background-size: 370px 460px;
+        padding: 120px 60px 100px 20px;
+        margin-bottom: 40px;
+    }
+}
+
+@media all and (max-width: 430px) {
+    #test_automation #highlights .curriculum_highlights {
+        background-size: 370px 500px;
+        padding: 120px 60px 80px 20px;
+    }
+
+    #test_automation #highlights .you_will ul {
+        padding: 0 15px;
+    }
+}
+
+@media all and (max-width: 400px) {
+    #test_automation #what_happens .our_benefits {
+        width: 90%;
+    }
+
+    #test_automation #highlights .curriculum_highlights {
+        background-size: 350px 470px;
+        padding: 100px 20px 60px 20px;
+    }
+}
+
+/*---------------------------------------------------*/
+/*----------- END TEST AUTOMATION PAGE -------------*/
+/*-------------------------------------------------*/
