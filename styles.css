@@ -3799,7 +3799,7 @@ h2
 
 
 #test_automation #highlights {
-    background-color: rgba(117, 117, 117, 0.25);
+    background-color: rgba(117, 117, 117, 0.15);
     margin: 0 0 40px;
     padding: 80px;
     display: flex;
@@ -3817,7 +3817,7 @@ h2
 }
 
 #test_automation #highlights .curriculum_highlights {
-    background-image: url('media/pushpin_note.png');
+    background-image: url('media/pushpin_note1.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 410px;
