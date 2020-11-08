@@ -838,6 +838,53 @@ a.button
 /*--------- START TEST AUTOMATION PAGE -------------*/
 /*-------------------------------------------------*/
 
+#test_automation #intro {
+    background-position: 50% 90px;
+}
+
+#test_automation #intro #intro_box {
+    margin-top: -2rem;
+}
+
+#test_automation #intro .layer h1 {
+    width: 65%;
+    font-size: 200%;
+}
+
+@media all and (max-width: 668px) {
+    #test_automation #intro #intro_box {
+        margin-top: -1rem;
+    }
+
+    #test_automation #intro .layer h1 {
+        width: 65%;
+        font-size: 160%;
+    }
+}
+
+#test_automation #intro .layer p {
+    width: 55%;
+    backdrop-filter: blur(5px) grayscale(0.1) opacity(0.85);
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 12px;
+    padding: 6px;
+}
+
+@media all and (max-width: 580px) {
+    #test_automation #intro .layer h1 {
+        width: 70%;
+        font-size: 150%;
+    }
+
+    #test_automation #intro .layer p {
+        width: 65%;
+    }
+}
+
+#test_automation #intro .layer a {
+    margin-top: 20rem;
+}
+
 #test_automation #cur .desk {
     height: 55rem;
 }
@@ -847,6 +894,9 @@ a.button
         width: 80%;
     }
 
+    #test_automation #what_happens h2 {
+        font-size: 160%;
+    }
 }
 
 @media all and (max-width: 620px) {
@@ -857,9 +907,17 @@ a.button
     #test_automation #highlights .curriculum_highlights ul {
         font-size: 16px;
     }
+
+    #test_automation #packages {
+        width: 90%;
+    }
 }
 
 @media all and (max-width: 540px) {
+    #test_automation #cur .desk {
+        height: 65rem;
+    }
+
     #test_automation #highlights {
         padding: 50px 10px;
     }
@@ -877,7 +935,7 @@ a.button
         padding: 120px 60px 80px 20px;
     }
 
-    #test_automation #highlights .you_will ul {
+    #test_automation #highlights .you_will--intro-header-font-size ul {
         padding: 0 15px;
     }
 }

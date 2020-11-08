@@ -3593,29 +3593,30 @@ h2
 
 #test_automation #intro {
     background-image: url("media/test_automation_banner.jpg");
+    background-position: 50% 80px;
 }
 
 #test_automation #intro #intro_box {
-    margin-top: 13rem;
+    margin-top: -5rem;
 }
 
 #test_automation #intro .layer a {
     width: 10rem;
+    margin-top: 28rem;
 }
 
 #test_automation #intro .layer p {
-    backdrop-filter: blur(5px) grayscale(0.1) opacity(0.85);
-    background-color: rgba(255, 255, 255, 0.6);
-    border-radius: 8px;
-    padding: 10px;
+    width: 30rem;
+    padding-bottom: 0;
 }
 
 #test_automation #intro .layer h1 {
-    backdrop-filter: blur(5px) grayscale(0.1) opacity(0.85);
-    background-color: rgba(255, 255, 255, 0.8);
-    width: 100%;
-    box-sizing: border-box;
-    padding: 10px;
+    white-space: initial;
+    width: 55%;
+    color: var(--intro-text-color);
+    font-size: var(--intro-header-font-size);
+    font-weight: var(--intro-header-font-weight);
+    padding-bottom: 0;
 }
 
 #test_automation #what_happens {
@@ -3850,6 +3851,7 @@ h2
 
 #test_automation #highlights .you_will ul {
     list-style: none;
+    padding: 0;
 }
 
 #test_automation #highlights .you_will ul li {
