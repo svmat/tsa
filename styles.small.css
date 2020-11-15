@@ -930,16 +930,17 @@ a.button
     }
 
     #test_automation #highlights .curriculum_highlights {
-        background-size: 370px 460px;
-        padding: 120px 60px 100px 20px;
-        margin-bottom: 40px;
+        background-size: 690px 690px;
+        padding: 110px 45px 50px 85px;
+        min-height: 480px;
     }
 }
 
 @media all and (max-width: 430px) {
     #test_automation #highlights .curriculum_highlights {
-        background-size: 370px 500px;
-        padding: 120px 60px 80px 20px;
+        background-size: 640px 610px;
+        padding: 85px 40px 50px 44px;
+        min-height: 450px;
     }
 
     #test_automation #highlights .you_will--intro-header-font-size ul {
@@ -953,8 +954,9 @@ a.button
     }
 
     #test_automation #highlights .curriculum_highlights {
-        background-size: 350px 460px;
-        padding: 100px 20px 60px 20px;
+        background-size: 620px 630px;
+        padding: 85px 35px 50px 40px;
+        min-height: 470px;
     }
 }
 
