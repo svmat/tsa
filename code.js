@@ -1,6 +1,7 @@
 var whoweare_profiles = [];
 var faq_questions     = [];
-var experience_items   = [];
+var experience_items  = [];
+var about_items       = [];
 
 var testimonials_wheel = {
     entries: [],
@@ -233,6 +234,9 @@ function updatePage ()
 
     for(var i = 0; i < experience_items.length; i++)
         animateOnVisible(experience_items[i]);
+
+    for(var i = 0; i < about_items.length; i++)
+        animateOnVisible(about_items[i]);
 }
 
 function handleScroll ()
@@ -291,6 +295,9 @@ function initPage ()
     whoweare_profiles = document.querySelectorAll("#whoweare .body .profile");
     faq_questions     = document.querySelectorAll("#faq .body .question");
     experience_items  = document.querySelectorAll("#experience_details ul li");
+    about_items       = document.querySelectorAll("#test_automation #cur_details ul li");
+
+    console.log('AAA', about_items)
 
     window.onscroll = handleScroll;
 

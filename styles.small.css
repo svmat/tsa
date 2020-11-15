@@ -868,6 +868,7 @@ a.button
     background-color: rgba(255, 255, 255, 0.4);
     border-radius: 12px;
     padding: 6px;
+    box-sizing: border-box;
 }
 
 @media all and (max-width: 580px) {
@@ -894,6 +895,17 @@ a.button
 
 #test_automation #cur .desk {
     height: 55rem;
+}
+
+#test_automation #cur .details ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#test_automation #cur .details li {
+    width: 80%;
+    margin: 1rem 0 1rem;
 }
 
 @media all and (max-width: 668px) {
