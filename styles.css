@@ -3975,6 +3975,10 @@ h2
     padding: 20px;
     text-align: center;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /*arrow creation*/
@@ -3999,10 +4003,29 @@ h2
     margin-left: -5px;
 }
 
-/*/arrow creation*/
+#test_automation #packages .initial-price {
+    position: relative;
+    display: inline-block;
+    margin: 1rem 0 -0.5rem;
+    opacity: 0.75;
+}
+
+#test_automation #packages .initial-price span {
+    font-size: 1.5rem;
+    text-decoration: line-through;
+}
+
+#test_automation #packages .initial-price sup {
+    font-size: 0.75rem;
+    position: absolute;
+    top: 10px;
+    left: -8px;
+}
+
 #test_automation #packages .price {
     position: relative;
     display: inline-block;
+    margin-top: 0;
     margin-bottom: 0.625rem;
 }
 
@@ -4023,17 +4046,16 @@ h2
     font-size: 1rem;
 }
 
-#test_automation #packages .hint{
-    font-style: italic;
-    font-size: 0.9rem;
-}
-
 #test_automation #packages .features {
     list-style-type: none;
     background: #F5F5F5;
     text-align: left;
     margin: 0;
     padding: 16px 32px;
+    color: #9C9C9C;
+}
+
+#test_automation #packages .features a {
     color: #9C9C9C;
 }
 

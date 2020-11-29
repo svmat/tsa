@@ -274,8 +274,6 @@ function initContactUsModal () {
     const modal = document.querySelector("#main #packages .payment-ways .contact-us-modal");
     const trigger = document.querySelector("#main #packages .payment-ways .contact-us-trigger");
 
-    console.log(modal, trigger)
-
     function toggleModal() {
         modal.classList.toggle("show-modal");
     }
@@ -296,8 +294,6 @@ function initPage ()
     faq_questions     = document.querySelectorAll("#faq .body .question");
     experience_items  = document.querySelectorAll("#experience_details ul li");
     about_items       = document.querySelectorAll("#test_automation #cur_details ul li");
-
-    console.log('AAA', about_items)
 
     window.onscroll = handleScroll;
 
@@ -322,7 +318,6 @@ function initChatWidget () {
     const chatWidgetActions = document.querySelector('.chat_widget .actions');
 
     chatWidgetBtn.addEventListener('click', () => {
-        console.log('toggling', chatWidgetActions.classList)
         chatWidgetActions.classList.toggle('open')
     })
 }
