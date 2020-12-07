@@ -3983,9 +3983,7 @@ h2
 
 /*arrow creation*/
 #test_automation #packages .content:after,
-#test_automation #packages .content:before,
-#test_automation #packages .pt-footer:before,
-#test_automation #packages .pt-footer:after {
+#test_automation #packages .content:before {
     top: 100%;
     left: 50%;
     border: solid transparent;
