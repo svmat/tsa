@@ -237,7 +237,7 @@ function initPage ()
     initContactUsModal();
 
     /* Here you can initialize Countdown timer. Just pass a valid date. */
-    initCountdown('Sep 13, 2020 00:00:00');
+    initCountdown('Jan 10, 2021 00:00:00');
 
     initChatWidget();
 }
