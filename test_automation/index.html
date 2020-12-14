@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+  <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+  <meta name="language" content="en">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
+
+  <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+
+  <link rel="stylesheet" type="text/css" href="../vars.css">
+  <link rel="stylesheet"
+        type="text/css"
+        href="../vars.small.css"
+        media="screen and (max-width: 1024px)">
+
+  <link rel="stylesheet" type="text/css" href="../styles.css">
+  <link rel="stylesheet"
+        type="text/css"
+        href="../styles.small.css"
+        media="screen and (max-width: 1024px)">
+  <link rel="stylesheet"
+        type="text/css"
+        href="../styles.huge.css"
+        media="screen and (min-width: 2160px)">
+
+  <link rel="stylesheet"
+        type="text/css"
+        href="https://fonts.googleapis.com/css?family=Lato&display=block">
+  <link rel="stylesheet"
+        type="text/css"
+        href="https://fonts.googleapis.com/css?family=Raleway&display=block">
+
+  <title>TechSkillAcademy QA</title>
+
+  <meta name="keywords"
+        content="QA,Quality Assurance,tester,online course,QA analyst,Software quality assurance,QA course for beginners,QA courses,school,bootcamp,hacker school,Chicago">
+  <meta name="geo.placename" content="Chicago">
+  <meta name="description"
+        content="TechSkillAcademy is an online school for QA testing certification.
+                   Learn why a career is the right choice for your future and enroll
+                   today!">
+
+  <script type="text/javascript" src="../code.js"></script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160012508-1">
+  </script>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-160012508-1');
+    gtag('config', 'AW-694927522');
+  </script>
+
+</head>
+
+
+<body id="test_automation" class="vars_colors vars_fonts vars_measurements">
+
+<div id="intro">
+  <div id="navbar">
+    <div class="entry dropdown">
+      <a href="#" aria-haspopup="true">Courses</a>
+
+      <ul class="dropdown-menu" aria-label="submenu">
+        <li><a href="/">QA Course</a></li>
+        <li><a href="/test_automation">Test Automation</a></li>
+      </ul>
+    </div>
+
+    <div class="entry dropdown">
+      <a href="#" aria-haspopup="true">Coaching</a>
+
+      <ul class="dropdown-menu" aria-label="submenu">
+        <li><a href="/interview">Interview simulator</a></li>
+        <li><a href="/coaching">1-on-1 Tutoring</a></li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <!--                <a href="/webinar">Webinar</a>-->
+      <a href="/webinar_copy">Webinar</a>
+    </div>
+
+<!--    <div class="entry">-->
+<!--      <a onclick="return smoothScroll('packages');" href="https://techskillacademy.net/#packages">Packages</a>-->
+<!--    </div>-->
+
+    <div class="entry">
+      <a href="https://m.me/techskillacademyhelp">Contact</a>
+    </div>
+
+    <div class="entry">
+      <a href="https://techskillacademy.thinkific.com/users/sign_in">Login</a>
+    </div>
+  </div>
+
+  <div id="menu">
+    <div id="menu_open"  onclick="return showMenuLinks();" class="open"></div>
+
+    <div id="menu_links" class="links">
+      <div onclick="return hideMenuLinks();" class="close"></div>
+
+      <div class="container">
+        <div class="accordion">
+          <div class="accordion-menu">
+            <input type="checkbox" name="courses-accordion-checkbox" id="courses-accordion-checkbox" />
+            <label for="courses-accordion-checkbox">Courses</label>
+
+            <div class="accordion-content">
+              <a onclick="return hideMenuLinks();" href="/">QA Course</a>
+              <a onclick="return hideMenuLinks();" href="/test_automation">Test Automation</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion-menu">
+            <input type="checkbox" name="accordion-checkbox" id="accordion-checkbox" />
+            <label for="accordion-checkbox">Coaching</label>
+
+            <div class="accordion-content">
+              <a onclick="return hideMenuLinks();" href="/interview">Interview simulator</a>
+              <a onclick="return hideMenuLinks();" href="/coaching">1-on-1 Tutoring</a>
+            </div>
+          </div>
+        </div>
+
+        <!--                    <a onclick="return hideMenuLinks();"-->
+        <!--                       href="/webinar">-->
+        <!--                        Webinar-->
+        <!--                    </a>-->
+        <a onclick="return hideMenuLinks();"
+           href="/webinar_copy">
+          Webinar
+        </a>
+
+<!--        <a onclick="return hideMenuLinks();"-->
+<!--           href="https://techskillacademy.net/#packages">-->
+<!--          Packages-->
+<!--        </a>-->
+
+        <a onclick="return hideMenuLinks();"
+           href="https://m.me/techskillacademyhelp">
+          Contact
+        </a>
+
+        <a onclick="return hideMenuLinks();"
+           href="https://techskillacademy.thinkific.com/users/sign_in">
+          Login
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="layer">
+    <img id="intro_logo"
+         class="item logo"
+         src="../media/intro_logo.png"
+         alt="TechSkillAcademy">
+    <img class="shaping" alt="" src="../media/intro_shaping.svg">
+
+    <div id="intro_box" class="box item">
+      <h1>
+        Start making $50/hr or more in IT with Test Automation
+      </h1>
+
+      <p>
+        With our program you can get started in IT without coding experience!
+      </p>
+
+      <a class="button" href="/">
+        Start Free Week
+      </a>
+    </div>
+  </div>
+</div>
+
+<div id="what_happens">
+  <div class="wrapper">
+    <h2>Ready to take the next step in your Quality Assurance Career?</h2>
+
+    <p>
+      In today's fast-paced software development world knowing Test Automation
+      is a <strong>MUST</strong> for Quality Assurance.
+    </p>
+
+    <p>
+      We are glad to see that most QA  testers realize this and ask
+      where they should start their journey to become more proficient in test
+      automation.
+    </p>
+
+    <p>For this reason we have created a <strong>Complete Test Automation Course!</strong></p>
+  </div>
+
+  <div class="our_benefits">
+    <div class="row">
+      <div class="col">
+        <h3>
+          <span class="underline">
+            Why do you need to learn Test Automation with TechSkillAcademy?
+          </span>
+        </h3>
+
+        <p class="arrowed">No prior coding experience needed!</p>
+
+          <p class="arrowed">Your Salary increases to $100k per year!</p>
+
+        <p class="arrowed">Flexible Payment Options!</p>
+
+        <p class="arrowed">Effective individual feedback and mentorship</p>
+
+        <p class="arrowed">Exclusive opportunity to work with TOP QA Engineers instructors</p>
+
+        <p class="arrowed">Support with resume preparation and job placement</p>
+
+        <p class="arrowed">Networking with recruiters for the next job placement</p>
+
+        <p class="arrowed">Opportunity to participate in an internship with our startup partners</p>
+      </div>
+
+      <div class="col">
+        <img src="../media/us_test_automation.jpg" alt="us_test_automation" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="cur">
+  <div class="desk">
+    <div id="cur_details" class="details">
+      <h2>
+        About the Program
+      </h2>
+
+      <ul>
+        <li>
+          <span>
+          Our Test Automation Course provides the best experience for students by
+          combining pre-recorded and Live online sessions
+          </span>
+        </li>
+        <li>
+          <span>
+            We utilize different communication channels and modern learning technologies
+          </span>
+        </li>
+        <li>
+          <span>
+            The Complete Test Automation Selenium + Python Course is <strong>100% practical</strong>.
+            You will have a plenty of assignments, quizzes, handouts and worksheets to complete
+          </span>
+        </li>
+        <li>
+          <span>
+            Throughout the course, you will create automation tests for Real Projects using
+            different techniques
+          </span>
+        </li>
+        <li>
+          <span>
+            We teach everything you need to know about Python to land the job in Test
+            Automation
+          </span>
+        </li>
+        <li>
+          <span>
+            If you want to become a <strong>rock</strong> star QA engineer join this course today
+          </span>
+        </li>
+      </ul>
+
+      <a class="button" onclick="return smoothScroll('packages');" href="#packages">
+        Sign Up Now!
+      </a>
+    </div>
+  </div>
+</div>
+
+<div id="highlights">
+  <div class="curriculum">
+    <div class="heading">
+      <span class="underline">Curriculum Highlights</span>
+    </div>
+
+    <div class="curriculum_highlights">
+      <ul>
+        <li>Web Applications basic structure knowledge, HTML and CSS</li>
+        <li>Python3 basics and modern programming techniques</li>
+        <li>Selenium API deep dive: IDE, WebDriver, Grid</li>
+        <li>Introduction to Object Oriented Programming</li>
+        <li>Test Reporting with Allure</li>
+        <li>Behavior Driven Development (BDD) with Behave</li>
+        <li>Continuous Integration (CI) with Jenkins</li>
+        <li>Interview and Resume Preparation</li>
+        <li><strong>BONUS COURSE:</strong> Source Control using Git including branching / merging</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="you_will">
+    <div class="heading">
+      <span class="underline">
+        With this program, you will:
+      </span>
+    </div>
+
+    <ul>
+      <li>Learn core computer science concepts from leading industry experts</li>
+      <li>Develop automated tests using Python, Behave and Selenium WebDriver</li>
+      <li>Test REST API utilizing JSON in Python automation project</li>
+      <li>Combine UI and REST API verification to create End-to-End tests</li>
+      <li>Automate your existing manual scenarios or repetitive actions at work</li>
+      <li>Understand Web applications and their infrastructure</li>
+      <li>Setup Jenkins for CI/CD (continuous integration / delivery)</li>
+      <li>Utilize Source Control with example of Git including pull requests and merges</li>
+      <li>Implement automated test cases using Page Object pattern</li>
+    </ul>
+  </div>
+</div>
+
+<div id="packages">
+  <div>
+    <h2 class="heading">
+      Packages
+    </h2>
+
+    <div class="line_sep"></div>
+  </div>
+
+  <div class="prices">
+    <div class="block journeyman">
+      <h2 class="title">Journeyman</h2>
+
+      <div class="content">
+        <p class="initial-price">
+          <sup>$</sup>
+          <span>1799</span>
+        </p>
+
+        <p class="price">
+          <sup>$</sup>
+          <span>1299</span>
+        </p>
+      </div>
+
+      <ul class="features">
+        <li>Python3 Programming</li>
+        <li>Comprehensive Selenium API: IDE and WebDriver</li>
+        <li>Object-Oriented Programming (OOP)</li>
+        <li>Behavior Driven Development (BDD) with Behave</li>
+        <li>On-demand learning Material</li>
+        <li>Individual Homework Feedback</li>
+        <li>Participation in Master Minds</li>
+        <li><strong>Unlimited</strong> Resume Review</li>
+        <li><strong>BONUS COURSE:</strong> Source Control using Git</li>
+        <li><strong>Extra FREE 2 months of course access after course is over</strong></li>
+      </ul>
+
+      <div class="pt-footer">
+        <a href="/">Enroll now</a>
+      </div>
+    </div>
+
+    <div class="block expert">
+      <h2 class="title">Expert</h2>
+
+      <div class="content">
+        <p class="initial-price">
+          <sup>$</sup>
+          <span>2299</span>
+        </p>
+
+        <p class="price">
+          <sup>$</sup>
+          <span>1799</span>
+        </p>
+      </div>
+
+      <ul class="features">
+        <li>Python3 Programming</li>
+        <li>Comprehensive Selenium API: IDE and WebDriver</li>
+        <li>Object-Oriented Programming (OOP)</li>
+        <li>Behavior Driven Development (BDD) with Behave</li>
+        <li>On-demand learning Material</li>
+        <li>Individual Homework Feedback</li>
+        <li>Participation in Master Minds</li>
+        <li><strong>Unlimited</strong> Resume Review</li>
+        <li><strong>BONUS COURSE:</strong> Source Control using Git</li>
+        <li><strong>Extra FREE 4 months of course access after course is over</strong></li>
+        <li><strong>Selenium Grid</strong></li>
+        <li><strong>Continuous Integration (CI) with Jenkins</strong></li>
+        <li><strong>Connection with Recruiter</strong></li>
+      </ul>
+
+      <div class="pt-footer">
+        <a href="/">Enroll now</a>
+      </div>
+    </div>
+
+    <div class="block master">
+      <h2 class="title">Master</h2>
+
+      <div class="content">
+        <p class="initial-price">
+          <sup>$</sup>
+          <span>3299</span>
+        </p>
+
+        <p class="price">
+          <sup>$</sup>
+          <span>2299</span>
+        </p>
+      </div>
+
+      <ul class="features">
+        <li>Python3 Programming</li>
+        <li>Comprehensive Selenium API: IDE and WebDriver</li>
+        <li>Object-Oriented Programming (OOP)</li>
+        <li>Behavior Driven Development (BDD) with Behave</li>
+        <li>On-demand learning Material</li>
+        <li>Individual Homework Feedback</li>
+        <li>Participation in Master Minds</li>
+        <li><strong>Unlimited</strong> Resume Review</li>
+        <li><strong>BONUS COURSE:</strong> Source Control using Git</li>
+        <li><strong>Extra FREE 6 months of course access after course is over</strong></li>
+        <li><strong>Selenium Grid</strong></li>
+        <li><strong>Continuous Integration (CI) with Jenkins</strong></li>
+        <li><strong>Connection with Recruiter</strong></li>
+        <li><strong>Algorithms: popular Interview Questions</strong></li>
+        <li><a href="https://techskillacademy.net/coaching">16 Personal Tutoring sessions</a></li>
+        <li><a href="https://techskillacademy.net/interview">Interview Simulator Session</a></li>
+        <li><strong>Online chat support</strong></li>
+        <li><strong>Personalized career goal setting</strong></li>
+      </ul>
+
+      <div class="pt-footer">
+        <a href="/">Enroll now</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="faq">
+  <div>
+    <h1>
+      FAQs
+    </h1>
+    <div class="line_sep"></div>
+  </div>
+
+  <div class="body">
+    <div class="question"
+         onclick="return toggleCollapse(this, '.answer', 'expand_arrow', 'collapse_arrow');">
+      <div class="header">
+        <div class="expand_arrow"></div>
+        <h2>
+          Is this course applicable for people without coding experience?
+        </h2>
+      </div>
+      <div class="answer">
+        <p>
+          Yes. This course will be beneficial for Manual Testers, Business Analysts, Project Managers, or
+          anyone else who is already working in IT and decided to expand technical knowledge.
+        </p>
+      </div>
+    </div>
+
+    <div class="question"
+         onclick="return toggleCollapse(this, '.answer', 'expand_arrow', 'collapse_arrow');">
+      <div class="header">
+        <div class="expand_arrow"></div>
+        <h2>
+          I don’t know anything about Python, will I be able to learn?
+        </h2>
+      </div>
+      <div class="answer">
+        <p>
+          Yes, the detailed program we put together will allow you not only learn Python quickly, but
+          also get a lot of practical experience.
+        </p>
+      </div>
+    </div>
+
+    <div class="question"
+         onclick="return toggleCollapse(this, '.answer', 'expand_arrow', 'collapse_arrow');">
+      <div class="header">
+        <div class="expand_arrow"></div>
+        <h2>
+          I don’t have any experience with testing at all. Will this course help me to get an Automation job?
+        </h2>
+      </div>
+      <div class="answer">
+        <p>
+          We would recommend you to start with a general QA Analyst training course first.
+          <a href="https://techskillacademy.net/">Here</a> you can get detailed information about our Quality Assurance Course.
+        </p>
+      </div>
+    </div>
+
+    <div class="question"
+         onclick="return toggleCollapse(this, '.answer', 'expand_arrow', 'collapse_arrow');">
+      <div class="header">
+        <div class="expand_arrow"></div>
+        <h2>
+          What if I miss a Live session?
+        </h2>
+      </div>
+      <div class="answer">
+        <p>
+          After each session you will get a recording and you can watch it at your convenience. Deadlines
+          for homeworks will still be the same. Also you will be able to discuss mastermind questions
+          with your individual mentor.
+        </p>
+      </div>
+    </div>
+
+    <div class="question"
+         onclick="return toggleCollapse(this, '.answer', 'expand_arrow', 'collapse_arrow');">
+      <div class="header">
+        <div class="expand_arrow"></div>
+        <h2>
+          I’m not quite sure now if that’s the right career for me. What should I do?
+        </h2>
+      </div>
+      <div class="answer">
+        <p>
+          Our first week is FREE to try! You can participate in all discussions and have access to the material.
+          In addition we guarantee a full refund in 14 days after the course starts to any student.
+        </p>
+
+        <p>
+          We also offer free industry consultation.
+        </p>
+
+        <div style="display: grid; place-items: center;">
+          <a class="button contact-us-trigger" href="https://m.me/techskillacademyhelp">Contact us today.</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="question"
+         onclick="return toggleCollapse(this, '.answer', 'expand_arrow', 'collapse_arrow');">
+      <div class="header">
+        <div class="expand_arrow"></div>
+        <h2>
+          What support are you providing?
+        </h2>
+      </div>
+      <div class="answer">
+        <p>
+          We provide individual real time chat support and individual zoom sessions. In addition, we are sharing
+          some insightful IT industry information, articles, checking your homework and hosting live sessions.
+        </p>
+      </div>
+    </div>
+
+    <div class="question"
+         onclick="return toggleCollapse(this, '.answer', 'expand_arrow', 'collapse_arrow');">
+      <div class="header">
+        <div class="expand_arrow"></div>
+        <h2>
+          Do I need to buy any books or software for the course?
+        </h2>
+      </div>
+      <div class="answer">
+        <p>
+          No, we will provide you with all needed material and licensing.
+        </p>
+      </div>
+    </div>
+
+    <div class="question"
+         onclick="return toggleCollapse(this, '.answer', 'expand_arrow', 'collapse_arrow');">
+      <div class="header">
+        <div class="expand_arrow"></div>
+        <h2>
+          If due to some personal reasons, I can not continue this class, will you allow me in the next class?
+        </h2>
+      </div>
+      <div class="answer">
+        <p>
+          We allow rolling over students due to the personal issues however you will lose some time until the
+          next course will start.
+        </p>
+      </div>
+    </div>
+
+    <div class="question"
+         onclick="return toggleCollapse(this, '.answer', 'expand_arrow', 'collapse_arrow');">
+      <div class="header">
+        <div class="expand_arrow"></div>
+        <h2>
+          Can I study on my own schedule?
+        </h2>
+      </div>
+      <div class="answer">
+        <p>
+          Yes, you can. In addition, if you take Master Package the schedule will be personalized based on
+          your availability.
+        </p>
+      </div>
+    </div>
+
+    <div class="question"
+         onclick="return toggleCollapse(this, '.answer', 'expand_arrow', 'collapse_arrow');">
+      <div class="header">
+        <div class="expand_arrow"></div>
+        <h2>
+          What if I decide that Test Automation is not for me?
+        </h2>
+      </div>
+      <div class="answer">
+        <p>
+          You can start watching lectures as soon as you sign up for the course. If you decide that the material
+          is too hard for you during a 2 week period we will provide a full refund.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="banner" class="modal" onclick="if(event.target == this) hideBanner(); return true;">
+  <div class="content">
+    <div onclick="return hideBanner();" class="close" title="Close"></div>
+    <div class="details">
+      <h2>Join us for a free webinar</h2>
+      <h3>How to start your career in IT without technical background</h3>
+    </div>
+    <img src="../media/banner_attn.jpg">
+    <a class="button"
+       href="https://techskillacademy.webinarninja.com/live-webinars/401337/register">
+      Reserve My Seat
+    </a>
+  </div>
+</div>
+
+<div id="footer">
+  <div class="left">
+    <div class="content">
+                <span>
+                &copy; 2020 TechSkillAcademy, LLC.
+                </span>
+      <a href="mailto:info@techskillacademy.net">info@techskillacademy.net</a>
+      <!-- a href="pp">
+          Privacy Policy
+      </a -->
+      <!-- a href="pp">
+          Terms of Use
+      </a -->
+    </div>
+  </div>
+  <div class="right">
+    <!-- a href="twitter"
+       title="TechSkillAcademy on Twitter">
+        <img alt="TechSkillAcademy on Twitter" src="media/footer_twitter.svg"/>
+    </a -->
+    <a href="https://www.instagram.com/techskillacademy"
+       title="TechSkillAcademy on Instagram">
+      <img alt="TechSkillAcademy on Instagram" src="../media/footer_instagram.svg"/>
+    </a>
+    <a href="https://www.facebook.com/techSkillAcademyHelp"
+       title="TechSkillAcademy on Facebook">
+      <img alt="TechSkillAcademy on Facebook" src="../media/footer_facebook.svg"/>
+    </a>
+    <a href="https://t.me/joinchat/AAAAAFMlGbxZxlU_5noljA"
+       target="_blank"
+       title="TechSkillAcademy on Telegram">
+      <img alt="TechSkillAcademy on Telegram" src="../media/telegram_icon.png"/>
+    </a>
+  </div>
+</div>
+
+<!--<div class="chat_widget">
+  <div class="pulse-button"></div>
+
+  <div class="actions">
+    <div class="round-button"><a class="instagram-button" target="_blank" href="https://www.instagram.com/techskillacademy"></a></div>
+    <div class="round-button"><a class="telegram-button" target="_blank"  href="https://t.me/joinchat/AAAAAFMlGbxZxlU_5noljA"></a></div>
+    <div class="round-button"><a class="mail-button" href="mailto:info@techskillacademy.net"></a></div>
+  </div>
+</div>-->
+
+</body>
+
+</html>

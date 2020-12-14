@@ -3599,3 +3599,561 @@ h2
 /*-------------- END MARATHON PAGE ----------------*/
 /*------------------------------------------------*/
 
+
+
+/*---------------------------------------------------*/
+/*--------- START TEST AUTOMATION PAGE -------------*/
+/*-------------------------------------------------*/
+
+#test_automation {
+    min-width: 320px;
+    scroll-behavior: smooth;
+}
+
+#test_automation #intro {
+    background-image: url("media/test_automation_banner.jpg");
+    background-position: 50% 80px;
+}
+
+#test_automation #intro #intro_box {
+    margin-top: -5rem;
+}
+
+#test_automation #intro .layer a {
+    width: 12rem;
+    padding: 1.25rem;
+    margin-top: 28rem;
+}
+
+#test_automation #intro .layer p {
+    width: 30rem;
+    padding-bottom: 0;
+}
+
+#test_automation #intro .layer h1 {
+    white-space: initial;
+    width: 55%;
+    color: var(--intro-text-color);
+    font-size: var(--intro-header-font-size);
+    font-weight: var(--intro-header-font-weight);
+    padding-bottom: 0;
+}
+
+#test_automation #what_happens {
+    position: relative;
+    overflow: hidden;
+}
+
+#test_automation #what_happens:before {
+    content: '';
+    background-image: url(media/pitch_decoration.svg);
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0.35;
+    position: absolute;
+    width: 15rem;
+    left: 2%;
+    top: 15%;
+    height: 18rem;
+    z-index: -1;
+}
+
+#test_automation #what_happens:after {
+    content: '';
+    background-image: url(media/pitch_decoration.svg);
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0.35;
+    position: absolute;
+    width: 15rem;
+    right: 2%;
+    bottom: 10%;
+    height: 18rem;
+    z-index: -1;
+}
+
+#test_automation #what_happens .wrapper {
+    max-width: 700px;
+    width: 100%;
+    margin: 60px auto 60px;
+    padding: 0 25px;
+    box-sizing: border-box;
+}
+
+#test_automation #what_happens h2 {
+    color: var(--darken-gray);
+    font-family: 'Helvetica', 'sans-serif';
+    font-weight: var(--intro-text-font-weight);
+    font-size: var(--subheader-font-size);
+    margin: 0;
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+
+#test_automation #what_happens h3 {
+    color: var(--darken-gray);
+
+    margin: 0;
+    padding-bottom: 0.3rem;
+
+    font-size:   var(--intro-text-font-size);
+    font-weight: var(--intro-header-font-weight);
+    font-family: var(--content-font);
+    line-height: 30px;
+    text-align: center;
+}
+
+#test_automation .underline {
+    border-bottom: 2px solid var(--sep-color);
+}
+
+#test_automation .red-underline {
+    border-bottom: 2px solid var(--sep-color);
+
+    display: inline;
+    line-height: 30px;
+
+    padding: 0.3rem 0 !important;
+}
+
+#test_automation #what_happens p {
+    color: var(--dark-header-text-color);
+    padding: 1rem 0;
+    font-size: var(--navbar-font-size);
+    font-weight: var(--def-font-weight);
+    font-family: var(--content-font);
+    position: relative;
+    margin: 0;
+}
+
+#test_automation #what_happens p strong {
+    color: var(--darken-gray);
+}
+
+#test_automation #what_happens p.arrowed {
+    padding: 5px 0 15px 25px;
+    margin-bottom: 0;
+}
+
+#test_automation #our_benefits p.arrowed.extra-margin {
+    margin-top: 12px;
+}
+
+#test_automation #what_happens p.arrowed:last-child {
+    margin: 0 0 8px;
+}
+
+#test_automation #what_happens p.arrowed:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 8px solid var(--button-background-color);
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+
+#test_automation #what_happens .our_benefits {
+    width: 70%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+#test_automation #what_happens .our_benefits .row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#test_automation #what_happens .our_benefits .col {
+    flex: 1 1 300px;
+    padding: 0 20px;
+}
+
+#test_automation #what_happens .our_benefits .col h3 + p {
+    margin-top: 15px;
+}
+
+#test_automation #what_happens .our_benefits .col img {
+    box-shadow: 0 8px 17px 2px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.2);
+    width: 100%;
+}
+
+#test_automation #cur {
+    margin-bottom: 0;
+}
+
+#test_automation #cur .desk {
+    display: grid;
+    place-items: center;
+    background-image: url('media/wooden_table.jpg');
+}
+
+#test_automation #cur .details {
+    position: unset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+#test_automation #cur .details .button {
+    margin-top: 4rem;
+}
+
+#test_automation #cur .details h2 {
+    text-shadow: 1px 2px 8px #000000AA;
+}
+
+#test_automation #cur .details li span {
+    display: inline-block;
+}
+
+#test_automation #cur .details li {
+    text-shadow: 1px 2px 8px #000000AA;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 1rem 0 2rem;
+    margin-left: 200%;
+    width: 60rem;
+    position: relative;
+}
+
+#test_automation #cur .desk .details li:before {
+    position: absolute;
+    top: -6px;
+    left: -22px;
+}
+
+#test_automation .desk .anim {
+    animation-name: anim_slidein;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+#test_automation #highlights {
+    margin: 0 0 40px;
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    box-sizing: border-box;
+    position: relative;
+}
+#test_automation #highlights::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('media/note_background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: opacity(0.45);
+    z-index: -1;
+}
+
+#test_automation #highlights .curriculum {
+    flex: 1 1 520px;
+    margin: 0 20px 0 0;
+    max-width: 520px;
+}
+
+#test_automation #highlights .curriculum_highlights {
+    background-image: url('media/pushpin_note1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 710px 710px;
+    padding: 110px 65px 50px 110px;
+    min-height: 550px;
+}
+
+#test_automation #highlights .curriculum_highlights ul {
+    color: var(--dark-header-text-color);
+    font-size: 18px;
+    font-weight: var(--def-font-weight);
+    font-family: var(--content-font);
+    margin: 0;
+    padding: 0;
+}
+
+#test_automation #highlights .curriculum_highlights ul li {
+    margin-bottom: 0.5rem;
+}
+
+#test_automation #highlights .heading {
+    color: var(--darken-gray);
+    margin: 0 0 40px;
+    padding-bottom: 0.3rem;
+    font-size: var(--subheader-font-size);
+    font-weight: var(--intro-header-font-weight);
+    font-family: var(--content-font);
+    line-height: 30px;
+    text-align: center;
+}
+
+#test_automation #highlights .you_will {
+    flex: 1 1 400px;
+    margin: 0 0 0 20px;
+    max-width: 500px;
+}
+
+#test_automation #highlights .you_will ul {
+    list-style: none;
+    padding: 0;
+}
+
+#test_automation #highlights .you_will ul li {
+    list-style-type: none;
+    font-size: 18px;
+    font-weight: var(--emph-font-weight);
+    margin-bottom: 12px;
+}
+
+#test_automation #highlights .you_will ul li:before {
+    content: '\25B8';
+    color: var(--bullet-color);
+    margin-left: -0.5rem;
+    font-size: 150%;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+#test_automation #packages {
+    width: 85%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+#test_automation #packages .heading {
+    color: var(--dark-header-text-color);
+    margin: 0.0rem;
+    text-align: center;
+    font-family: var(--standout-font);
+    font-size: var(--header-font-size);
+    font-weight: var(--header-font-weight);
+}
+
+#test_automation #packages .prices {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#test_automation #packages .block {
+    flex: 1 1 270px;
+    margin: 20px;
+    transition: transform .3s;
+    max-width: 400px;
+}
+
+#test_automation #packages .block:hover {
+    transform: scale(1.02);
+}
+
+/*Shared properties*/
+#test_automation #packages .title,
+#test_automation #packages .pt-footer {
+    color: #FEFEFE;
+    margin: 0;
+    padding: 15px;
+    font-family: var(--standout-font);
+    font-size: var(--packages-header-font-size);
+    font-weight: var(--def-font-weight);
+    text-align: center;
+    transition: background .3s;
+}
+
+#test_automation #packages .pt-footer {
+    padding: 0;
+}
+
+#test_automation #packages .pt-footer a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: #FEFEFE;
+}
+
+#test_automation #packages .content{
+    color: #FEFEFE;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*arrow creation*/
+#test_automation #packages .content:after,
+#test_automation #packages .content:before {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 1px;
+    position: absolute;
+    pointer-events: none;
+}
+
+#test_automation #packages .content:after,
+#test_automation #packages .pt-footer:after {
+    border-color: rgba(136, 183, 213, 0);
+    border-width: 5px;
+    margin-left: -5px;
+}
+
+#test_automation #packages .initial-price {
+    position: relative;
+    display: inline-block;
+    margin: 1rem 0 -0.5rem;
+    opacity: 0.75;
+}
+
+#test_automation #packages .initial-price span {
+    font-size: 1.5rem;
+    text-decoration: line-through;
+}
+
+#test_automation #packages .initial-price sup {
+    font-size: 0.75rem;
+    position: absolute;
+    top: 10px;
+    left: -8px;
+}
+
+#test_automation #packages .price {
+    position: relative;
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0.625rem;
+}
+
+#test_automation #packages .price span {
+    font-size: 3rem;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+#test_automation #packages .price sup {
+    font-size: 1.25rem;
+    position: absolute;
+    top: 18px;
+    left: -14px;
+}
+
+#test_automation #packages .price sub {
+    font-size: 1rem;
+}
+
+#test_automation #packages .features {
+    list-style-type: none;
+    background: #F5F5F5;
+    text-align: left;
+    margin: 0;
+    padding: 16px 32px;
+    color: #9C9C9C;
+}
+
+#test_automation #packages .features a {
+    color: #9C9C9C;
+}
+
+#test_automation #packages .features li{
+    padding: 12px 0;
+    width: 100%;
+    /*color: var(--dark-header-text-color);*/
+}
+
+#test_automation #packages .features li span{
+    padding-right: 0.4rem;
+}
+
+#test_automation #packages .pt-footer{
+    font-size: 0.95rem;
+    text-transform: capitalize;
+}
+
+/*PERSONAL*/
+#test_automation #packages .journeyman .title{
+    background: #d49f80;
+}
+
+#test_automation #packages .journeyman .content,.journeyman .pt-footer{
+    background: #f9ba94;
+}
+
+#test_automation #packages .journeyman .content:after{
+    border-top-color: #f9ba94;
+}
+
+#test_automation #packages .journeyman .pt-footer:after{
+    border-top-color: #FFFFFF;
+}
+
+#test_automation #packages .journeyman .pt-footer:hover {
+    background: #d49f80;
+}
+
+/*PROFESSIONAL*/
+#test_automation #packages .expert .title{
+    background: #cb666f;
+}
+
+#test_automation #packages .expert .content, .expert .pt-footer{
+    background: #eb7580;
+}
+
+#test_automation #packages .expert .content:after{
+    border-top-color: #eb7580;
+}
+
+#test_automation #packages .expert .pt-footer:after{
+    border-top-color: #FFFFFF;
+}
+
+#test_automation #packages .expert .pt-footer:hover {
+    background: #cb666f;
+}
+
+/*BUSINESS*/
+#test_automation #packages .master .title{
+    background: #a26076;
+}
+
+#test_automation #packages .master .content,.master .pt-footer{
+    background: #bb6d87;
+}
+
+#test_automation #packages .master .content:after{
+    border-top-color: #bb6d87;
+}
+
+#test_automation #packages .master .pt-footer:after {
+    border-top-color: #FFFFFF;
+}
+
+#test_automation #packages .master .pt-footer:hover {
+    background: #a26076;
+}
+
+/*--------------------------------------------------*/
+/*---------- END TEST AUTOMATION PAGE -------------*/
+/*------------------------------------------------*/
