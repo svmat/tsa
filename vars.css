@@ -19,9 +19,9 @@
     --menu-icon-color:             rgba(  0,   0,   0, 1.0);
     --menu-links-background-color: rgba(245, 245, 245, 1.0);
     --menu-links-text-color:       rgba(  0,   0,   0, 1.0);
-    --packages-pro-color:          rgba(249, 178, 148, 1.0);
-    --packages-adv-color:          rgba(235, 117, 128, 1.0);
-    --packages-vip-color:          rgba(187, 109, 135, 1.0);
+    --packages-pro-color: rgb(198, 141, 118);
+    --packages-adv-color: rgb(235, 117, 128);
+    --packages-vip-color: rgb(187, 109, 135);
     --packages-old-color:          rgba(150, 150, 150, 1.0);
     --packages-new-color:          rgba(  0,   0,   0, 1.0);
     --banner-title-color:          rgba(255, 100, 100, 1.0);

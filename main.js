@@ -1,6 +1,7 @@
 var whoweare_profiles = [];
 var faq_questions     = [];
-var experience_items   = [];
+var experience_items  = [];
+var about_items       = [];
 
 var testimonials_wheel = {
     entries: [],
@@ -211,6 +212,9 @@ function updatePage ()
 
     for(var i = 0; i < experience_items.length; i++)
         animateOnVisible(experience_items[i]);
+
+    for(var i = 0; i < about_items.length; i++)
+        animateOnVisible(about_items[i]);
 }
 
 function handleScroll ()
@@ -218,11 +222,56 @@ function handleScroll ()
     updatePage();
 }
 
+function initCountdown (finishDate) {
+    console.log('Initializing countdown', finishDate)
+
+    const second = 1000,
+        minute = second * 60,
+        hour = minute * 60,
+        day = hour * 24;
+
+    let countDown = new Date(finishDate).getTime();
+
+    const timer = setInterval(function() {
+        let now = new Date().getTime();
+        let distance = countDown - now;
+
+        if (distance < 0) {
+            clearInterval(timer);
+            initCountdown(Date.now() + 1000 * 60 * 60 * 24 * 7);
+        }
+
+        document.getElementById('countdown-days').innerText = Math.floor(distance / (day)),
+        document.getElementById('countdown-hours').innerText = Math.floor((distance % (day)) / (hour)),
+        document.getElementById('countdown-minutes').innerText = Math.floor((distance % (hour)) / (minute)),
+        document.getElementById('countdown-seconds').innerText = Math.floor((distance % (minute)) / second);
+    }, second)
+}
+
+function initContactUsModal () {
+    const modal = document.querySelector("#main #packages .payment-ways .contact-us-modal");
+    const trigger = document.querySelector("#main #packages .payment-ways .contact-us-trigger");
+
+    function toggleModal() {
+        modal.classList.toggle("show-modal");
+    }
+
+    function windowOnClick(event) {
+        if (event.target === modal) {
+            toggleModal();
+        }
+    }
+
+    trigger.addEventListener("click", toggleModal);
+    window.addEventListener("click", windowOnClick);
+}
+
 function initPage ()
 {
     whoweare_profiles = document.querySelectorAll("#whoweare .body .profile");
     faq_questions     = document.querySelectorAll("#faq .body .question");
     experience_items  = document.querySelectorAll("#experience_details ul li");
+    about_items       = document.querySelectorAll("#test_automation #cur_details ul li");
 
     window.onscroll = handleScroll;
 
@@ -240,6 +289,15 @@ function initPage ()
     initCountdown('Jan 10, 2021 00:00:00');
 
     initChatWidget();
+}
+
+function initChatWidget () {
+    const chatWidgetBtn = document.querySelector('.chat_widget .pulse-button');
+    const chatWidgetActions = document.querySelector('.chat_widget .actions');
+
+    chatWidgetBtn.addEventListener('click', () => {
+        chatWidgetActions.classList.toggle('open')
+    })
 }
 
 window.onload = initPage;
