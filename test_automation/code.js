@@ -1,16 +1,3 @@
-var whoweare_profiles = [];
-var faq_questions     = [];
-var experience_items  = [];
-var about_items       = [];
-
-var testimonials_wheel = {
-    entries: [],
-    focus:   0
-};
-
-var animation_id    = null;
-var last_client_top = -1;
-
 
 function isVisible (e)
 {
@@ -24,18 +11,6 @@ function isVisible (e)
     }
 
     return false;
-}
-
-function showBanner ()
-{
-    document.getElementById("banner").style.display = "block";
-    return true;
-}
-
-function hideBanner ()
-{
-    document.getElementById("banner").style.display = "none";
-    return true;
 }
 
 function removeWheelAttrs (e)
@@ -153,7 +128,6 @@ function tryStopAnimation ()
         last_client_top = -1;
     }
 }
-
 function updatePage ()
 {
     for(var i = 0; i < whoweare_profiles.length; i++)
@@ -183,18 +157,18 @@ function initPage ()
 
     window.onscroll = handleScroll;
 
-    var main = document.getElementById("main");
+    var main = document.getElementById("test_automation");
 
     main.style.display = "block";
 
-    initWheel(testimonials_wheel, "#testimonials .wheel .content .statement");
+    //initWheel(testimonials_wheel, "#testimonials .wheel .content .statement");
     updatePage();
     //showBanner();
 
-    initContactUsModal();
+    //initContactUsModal();
 
     /* Here you can initialize Countdown timer. Just pass a valid date. */
-    initCountdown('Mar 28, 2021 00:00:00');
+    //initCountdown('Mar 28, 2021 00:00:00');
 
     initChatWidget();
 }

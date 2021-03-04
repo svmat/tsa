@@ -20,6 +20,55 @@ function hideMenuLinks ()
     return true;
 }
 
+function smoothScroll (e)
+{
+    var dest_y   = 0;
+    var frame_ms = 1000/24;
+
+    var e = document.getElementById(e);
+    if(e != null)
+    {
+        tryStopAnimation();
+
+        animation_id = setInterval(function() { stepScrolling(e, dest_y) }, frame_ms);
+
+        return false;
+    }
+
+    return true;
+}
+
+
+function stepScrolling (e, dest_y)
+{
+    var rect      = e.getBoundingClientRect();
+    var destDelta = dest_y - rect.top;
+    if(Math.abs(destDelta) < 2)
+    {
+        tryStopAnimation();
+        return;
+    }
+
+    var rate = Math.abs(destDelta / 5);
+    if(rate < 1)
+        rate = 1;
+
+    if(destDelta > 0)
+        rate = -rate;
+
+    window.scrollBy(0, rate);
+
+    var newRect = e.getBoundingClientRect();
+    if(newRect.top == rect.top)
+        tryStopAnimation();
+    if(last_client_top == newRect.top)
+    tryStopAnimation();
+    if((window.scrollYOffset + window.innerHeight) >= document.body.scrollHeight)
+    tryStopAnimation();
+
+    last_client_top = newRect.top;
+}
+
 function initCountdown (finishDate) {
     console.log('Initializing countdown', finishDate)
 
