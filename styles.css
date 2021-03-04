@@ -3611,7 +3611,7 @@ h2
 }
 
 #test_automation #intro {
-    background-image: url("media/test_automation_banner.jpg");
+    background-image: url("media/test_automation_banner_sm.jpg");
     background-position: 50% 80px;
 }
 
@@ -3783,7 +3783,10 @@ h2
 
 #test_automation #what_happens .our_benefits .col img {
     box-shadow: 0 8px 17px 2px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.2);
-    width: 100%;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #test_automation #cur {
