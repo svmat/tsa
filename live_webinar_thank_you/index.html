@@ -39,6 +39,7 @@
                    today!">
 
     <script type="text/javascript" src="../common.js"></script>
+    <script type="text/javascript" src="code.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Ads: 694927522 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160012508-1">
@@ -58,11 +59,14 @@
 
     <div id="intro">
         <div id="navbar">
-            <div class="entry">
-<!--                <a href="/webinar">Webinar</a>-->
-                <a href="/webinar_copy">Webinar</a>
-            </div>
+            <div class="entry dropdown">
+                <a href="#" aria-haspopup="true">Courses</a>
 
+                <ul class="dropdown-menu" aria-label="submenu">
+                    <li><a href="/">QA Course</a></li>
+                    <li><a href="/test_automation">Test Automation</a></li>-->
+                </ul>
+            </div>
             <div class="entry dropdown">
                 <a href="#" aria-haspopup="true">Coaching</a>
 
@@ -71,9 +75,8 @@
                     <li><a href="/coaching">1-on-1 Tutoring</a></li>
                 </ul>
             </div>
-
             <div class="entry">
-                <a onclick="return smoothScroll('packages');" href="https://techskillacademy.net/#packages">Packages</a>
+                <a href="/webinar">Webinar</a>
             </div>
 
             <div class="entry">
@@ -92,15 +95,17 @@
                 <div onclick="return hideMenuLinks();" class="close"></div>
 
                 <div class="container">
-<!--                    <a onclick="return hideMenuLinks();"-->
-<!--                       href="/webinar">-->
-<!--                        Webinar-->
-<!--                    </a>-->
-                    <a onclick="return hideMenuLinks();"
-                       href="/webinar_copy">
-                        Webinar
-                    </a>
+                    <div class="accordion">
+                        <div class="accordion-menu">
+                            <input type="checkbox" name="courses-accordion-checkbox" id="courses-accordion-checkbox" />
+                            <label for="courses-accordion-checkbox">Courses</label>
 
+                            <div class="accordion-content">
+                                <a onclick="return hideMenuLinks();" href="/">QA Course</a>
+                                <a onclick="return hideMenuLinks();" href="/test_automation">Test Automation</a>-->
+                            </div>
+                        </div>
+                    </div>
                     <div class="accordion">
                         <div class="accordion-menu">
                             <input type="checkbox" name="accordion-checkbox" id="accordion-checkbox" />
@@ -114,8 +119,8 @@
                     </div>
 
                     <a onclick="return hideMenuLinks();"
-                       href="https://techskillacademy.net/#packages">
-                        Packages
+                       href="/webinar">
+                        Webinar
                     </a>
 
                     <a onclick="return hideMenuLinks();"
@@ -142,12 +147,12 @@
                 <h1>
                     Your Webinar Seat is Reserved!
                 </h1>
-                <p>Live Webinar Date & Time: Sunday December 20, 12:00 PM (CST)</p>
+                <p>Live Webinar Date & Time: Sunday March 14, 10:00 AM (CST)</p>
                 <div class="line_sep"></div>
 
                 <div id="emailopening">
                     <h3>
-                      Check you email for Webinar Details.
+                      Check your email for Webinar Details.
                     </h3>
                     <h3>
                       Watch the video below on how to join the webinar.
@@ -156,7 +161,17 @@
                         <iframe src="https://www.youtube.com/embed/g8Vf5FZWlSE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
-                <br>
+<!--                 <div class="countdown-container">
+                    <h3>Webinar starts in:</h3>
+
+                    <ul>
+                        <li><span id="countdown-days"></span>Days</li>
+                        <li><span id="countdown-hours"></span>Hours</li>
+                        <li><span id="countdown-minutes"></span>Minutes</li>
+                        <li><span id="countdown-seconds"></span>Seconds</li>
+                    </ul>
+                </div>
+                <br> -->
                 <h3>
                     Meanwhile we would like to take the opportunity and invite you to join our community on Social Media.
                 </h3>
