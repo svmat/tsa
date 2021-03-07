@@ -935,6 +935,12 @@ a.button
 @media all and (max-width: 540px) {
     #test_automation #cur .desk {
         height: 65rem;
+        background-position:center;
+    }
+
+    #test_automation #cur .details .button {
+        margin-top: 0px;
+        padding-top: 0.1rem;
     }
 
     #test_automation #highlights {
