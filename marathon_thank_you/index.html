@@ -49,9 +49,13 @@
 
     <div id="intro">
         <div id="navbar">
-            <div class="entry">
-<!--                <a href="/webinar">Webinar</a>-->
-                <a href="/webinar_copy">Webinar</a>
+            <div class="entry dropdown">
+                <a href="#" aria-haspopup="true">Courses</a>
+
+                <ul class="dropdown-menu" aria-label="submenu">
+                    <li><a href="/">QA Course</a></li>
+                    <li><a href="/test_automation">Test Automation</a></li>-->
+                </ul>
             </div>
 
             <div class="entry dropdown">
@@ -64,9 +68,11 @@
             </div>
 
             <div class="entry">
-                <a onclick="return smoothScroll('packages');" href="https://techskillacademy.net/#packages">Packages</a>
+                <a href="/webinar">Webinar</a>
             </div>
-
+            <div class="entry">
+                <a href="/marathon">Workshop</a>
+            </div>
             <div class="entry">
                 <a href="https://m.me/techskillacademyhelp">Contact</a>
             </div>
@@ -83,14 +89,17 @@
                 <div onclick="return hideMenuLinks();" class="close"></div>
 
                 <div class="container">
-<!--                    <a onclick="return hideMenuLinks();"-->
-<!--                       href="/webinar">-->
-<!--                        Webinar-->
-<!--                    </a>-->
-                    <a onclick="return hideMenuLinks();"
-                       href="/webinar_copy">
-                        Webinar
-                    </a>
+                    <div class="accordion">
+                        <div class="accordion-menu">
+                            <input type="checkbox" name="courses-accordion-checkbox" id="courses-accordion-checkbox" />
+                            <label for="courses-accordion-checkbox">Courses</label>
+
+                            <div class="accordion-content">
+                                <a onclick="return hideMenuLinks();" href="/">QA Course</a>
+                                <a onclick="return hideMenuLinks();" href="/test_automation">Test Automation</a>
+                            </div>
+                        </div>
+                    </div>
 
                     <div class="accordion">
                         <div class="accordion-menu">
@@ -103,12 +112,14 @@
                             </div>
                         </div>
                     </div>
-
                     <a onclick="return hideMenuLinks();"
-                       href="https://techskillacademy.net/#packages">
-                        Packages
+                       href="/webinar">
+                        Webinar
                     </a>
-
+                    <a onclick="return hideMenuLinks();"
+                       href="/marathon">
+                        Workshop
+                    </a>  
                     <a onclick="return hideMenuLinks();"
                        href="https://m.me/techskillacademyhelp">
                         Contact
@@ -137,7 +148,7 @@
                     <h2>
                       Check your email for Workshop Details.
                     </h2>
-                    <p>Workshop Starts: Wednesday January 6th, 6:00 PM (CST)</p>
+                    <p>Workshop Starts: Wednesday March 24th, 6:00 PM (CST)</p>
                 <div class="countdown-container">
                     <ul>
                         <li><span id="countdown-days"></span>Days</li>
