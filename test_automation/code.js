@@ -1,4 +1,7 @@
 
+var experience_items  = [];
+var about_items       = [];
+
 function isVisible (e)
 {
     var rect = e.getBoundingClientRect();
