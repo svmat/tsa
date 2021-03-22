@@ -3164,10 +3164,14 @@ h2
 
 #webinar_thank_you #intro .layer h2
 {
-    color: var(--intro-text-color);
+    color: black;
     padding-bottom: 0.5rem;
     font-family: var(--content-font);
     font-weight: var(--intro-text-font-weight);
+}
+#webinar_thank_you #intro .layer p
+{
+    color: black;
 }
 
 #webinar_thank_you .social_media_btns
@@ -3193,6 +3197,22 @@ h2
 #webinar_thank_you .social_media_btns a:hover
 {
     filter: grayscale(0%);
+}
+
+#webinar_thank_you #emailopening
+{
+    display: flex;
+    padding-bottom: 3rem;
+}
+
+#webinar_thank_you #emailopening .column
+{
+    flex: 50%;
+}
+
+#webinar_thank_you #emailopening img
+{
+    width: 18rem;
 }
 
 #landing #getstarted .countdown-container

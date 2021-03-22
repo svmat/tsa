@@ -668,6 +668,20 @@ a.button
     font-size: var(--menu-links-font-size);
 }
 
+#webinar_thank_you #emailopening {
+    display: block;
+}
+
+#webinar_thank_you #emailopening img{
+    width: 10rem;
+    padding-bottom: 3rem;
+}
+
+#webinar_thank_you #emailopening .column h2
+{
+    padding: 0px;
+}
+
 #emailopening h3
 {
     max-width: 100%;
@@ -885,6 +899,24 @@ a.button
 
     #test_automation #intro .layer p {
         width: 100%;
+        margin: 14rem 2rem -15rem 2rem;
+    }
+}
+
+@media all and (max-width: 375px) {
+    #test_automation #intro #intro_box {
+        margin-top: 0;
+        margin-left: 1rem;
+        margin-right: 2rem;
+    }
+
+    #test_automation #intro .layer h1 {
+        width: 90%;
+        font-size: 150%;
+    }
+
+    #test_automation #intro .layer p {
+        width: 90%;
         margin: 14rem 4rem -15rem 4rem;
     }
 }
