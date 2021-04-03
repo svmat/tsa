@@ -59,10 +59,14 @@
 
     <div id="intro">
         <div id="navbar">
-            <div class="entry">
-                <a href="/webinar">Webinar</a>
-            </div>
+            <div class="entry dropdown">
+                <a href="#" aria-haspopup="true">Courses</a>
 
+                <ul class="dropdown-menu" aria-label="submenu">
+                    <li><a href="/">QA Course</a></li>
+                    <li><a href="/test_automation">Test Automation</a></li>
+                </ul>
+            </div>
             <div class="entry dropdown">
                 <a href="#" aria-haspopup="true">Coaching</a>
 
@@ -71,11 +75,13 @@
                     <li><a href="/coaching">1-on-1 Tutoring</a></li>
                 </ul>
             </div>
-
             <div class="entry">
-                <a onclick="return smoothScroll('packages');" href="https://techskillacademy.net/#packages">Packages</a>
+                <a href="/webinar">Webinar</a>
             </div>
-
+            <!--
+            <div class="entry">
+                <a href="https://workshop.techskillacademy.net/python-workshop">Workshop</a>
+            </div>-->
             <div class="entry">
                 <a href="https://m.me/techskillacademyhelp">Contact</a>
             </div>
@@ -92,11 +98,17 @@
                 <div onclick="return hideMenuLinks();" class="close"></div>
 
                 <div class="container">
-                    <a onclick="return hideMenuLinks();"
-                       href="/webinar">
-                        Webinar
-                    </a>
+                    <div class="accordion">
+                        <div class="accordion-menu">
+                            <input type="checkbox" name="courses-accordion-checkbox" id="courses-accordion-checkbox" />
+                            <label for="courses-accordion-checkbox">Courses</label>
 
+                            <div class="accordion-content">
+                                <a onclick="return hideMenuLinks();" href="/">QA Course</a>
+                                <a onclick="return hideMenuLinks();" href="/test_automation">Test Automation</a>
+                            </div>
+                        </div>
+                    </div>
                     <div class="accordion">
                         <div class="accordion-menu">
                             <input type="checkbox" name="accordion-checkbox" id="accordion-checkbox" />
@@ -110,10 +122,14 @@
                     </div>
 
                     <a onclick="return hideMenuLinks();"
-                       href="https://techskillacademy.net/#packages">
-                        Packages
+                       href="/webinar">
+                        Webinar
                     </a>
-
+                    <!--
+                    <a onclick="return hideMenuLinks();"
+                       href="https://workshop.techskillacademy.net/python-workshop">
+                        Workshop
+                    </a>-->  
                     <a onclick="return hideMenuLinks();"
                        href="https://m.me/techskillacademyhelp">
                         Contact
@@ -141,15 +157,29 @@
                 <div class="line_sep"></div>
 
                 <div id="emailopening">
-                    <h3>
-                      Check you email for Webinar Details.
-                    </h3>
-                    <h3>
-                      Watch the video below on how to join the webinar.
-                    </h3>
-                    <div class="video">
-                        <iframe src="https://www.youtube.com/embed/YvjSjSk6wtQ" allowfullscreen>
-                        </iframe>
+                    <div class="column">
+                        <h2>
+                          You should receive an email with webinar details shortly.
+                        </h2>
+                        <h2>
+                          To get the link to the webinar open Telegram chat.
+                        </h2>
+                        <div>
+                            <a href="https://t.me/techskillacademy_webinar_bot"
+                           target="_blank"
+                           title="TechSkillAcademy on Telegram">
+                            <img alt="TechSkillAcademy on Telegram" src="../media/Telegram-Banner.jpg"/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <h3>
+                          If you didn't receive an email, watch the video below.
+                        </h3>
+                      <div class="video">
+                          <iframe src="https://www.youtube.com/embed/YvjSjSk6wtQ" allowfullscreen>
+                          </iframe>
+                      </div>
                     </div>
                 </div>
                 <br>
@@ -166,7 +196,7 @@
                        title="TechSkillAcademy on Instagram">
                         <img alt="TechSkillAcademy on Instagram" src="../media/footer_instagram.svg"/>
                     </a>
-                    <a href="https://t.me/joinchat/AAAAAFMlGbxZxlU_5noljA"
+                    <a href="https://t.me/techskillacademy_webinar_bot"
                        target="_blank"
                        title="TechSkillAcademy on Telegram">
                         <img alt="TechSkillAcademy on Telegram" src="../media/telegram.svg"/>
