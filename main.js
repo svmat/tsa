@@ -189,12 +189,12 @@ function initPage ()
 
     initWheel(testimonials_wheel, "#testimonials .wheel .content .statement");
     updatePage();
-    showBanner();
+    //showBanner();
 
     initContactUsModal();
 
     /* Here you can initialize Countdown timer. Just pass a valid date. */
-    initCountdown('Mar 28, 2021 00:00:00');
+    //initCountdown('Mar 28, 2021 00:00:00');
 
     initChatWidget();
 }

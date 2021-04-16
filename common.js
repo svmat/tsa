@@ -99,7 +99,7 @@ function initContactUsModal () {
     const modal = document.querySelector("#main #packages .payment-ways .contact-us-modal");
     const trigger = document.querySelector("#main #packages .payment-ways .contact-us-trigger");
 
-    console.log(modal, trigger)
+    //console.log(modal, trigger)
 
     function toggleModal() {
         modal.classList.toggle("show-modal");
